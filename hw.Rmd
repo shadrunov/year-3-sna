@@ -1,0 +1,224 @@
+---
+title: "Homework 1"
+subtitle: "Introduction to Network Analysis"
+author: "Aleksey Shadrunov (Group 2, asshadrunov@edu.hse.ru)"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document:
+    toc: true
+---
+
+\newpage
+
+# prepare packages and load data
+install packages (uncomment if needed):
+```{r}
+# install.packages("network")
+# install.packages("sna")
+```
+
+load data `trade.Rdata`:
+```{r}
+suppressPackageStartupMessages(library(network))
+suppressPackageStartupMessages(library(sna))
+load("trade.Rdata")
+```
+
+check what have been loaded:
+```{r}
+ls()
+```
+
+## first examination of data
+for further analysis I've selected network **"manufacture"**. let's convert it to matrix and check its dimensions.
+```{r}
+manufacture = as.matrix(manufacture)
+dim(manufacture)
+```
+
+in addition, we have loaded attributes of the vertices in `trade.att` object. its dimensions are:
+```{r}
+dim(trade.att)
+```
+
+we may output several cells of each matrix to check:
+```{r}
+manufacture[1:6,1:6]
+```
+```{r}
+head(trade.att)
+```
+```{r}
+all(colnames(manufacture) == colnames(trade.all))
+```
+
+as we see, both matrices have the same column names, and `trade.att` contains `POP_GROWTH`, `GNP`, `SCHOOLS` and `ENERGY` columns. so, we can safely apply attributes to the network.
+
+\newpage
+
+# basic network statistics 
+first step is to create a network:
+```{r}
+manufacture.net <- as.network(
+                        x = manufacture,
+                        directed = FALSE,
+                        matrix.type = "adjacency"
+                    )
+```
+here `directed` parameter equals `FALSE`, however it is not correct, since the network is directed. to prove that, we should compare adjacency matrix with its transposition. in our case, these matrices differ, so network is directed. but for simplicity we ignore that.
+```{r}
+all(t(manufacture) == manufacture)  # is network undirected?
+```
+
+
+let's look at the network parameters:
+```{r}
+manufacture.net
+```
+as we observe, the network has 24 vertices and 195 edges, no loops and duplicating edges.  
+
+now let's count other statistics.
+## dyads
+```{r}
+# number of dyads:
+network.dyadcount(manufacture.net)
+# types of dyads
+dyad.census(manufacture.net)
+```
+number of dyads is just the number of all possible pairs of the vertices (potential conntection) and could be in simple case calculated as
+$$
+\frac{n \cdot (n-1)}{2}
+$$  
+however, `census` is more informative: there are 195 mutual dyads and 81 null ones, so 81 pairs (about 30%) of vertices are not connected directly.  
+
+## density
+```{r}
+# number of ties we already know from above, but this is another way to get it
+network.edgecount(manufacture.net)
+
+# density of the network
+network.density(manufacture.net)
+```
+network density describes the portion of the potential connections in a network that are actual connections. our network is highly dense, which means that there are many connections in the network and international trade of manufactured goods is very active.  
+
+## triads
+
+```{r}
+# types of triads
+triad.census(manufacture.net)
+```
+in our undirected network we have only few types of triads, specifically 003, 102, 201, 300. as last two types are in total 78% of all triads, we may conclude again that connectivity is high. 
+
+## case of directed network
+now we should repeat the procedure with directed network, which our network in fact is. 
+```{r}
+manufacture.directed <- as.network(manufacture, directed = TRUE)
+manufacture.directed
+
+# number of dyads:
+network.dyadcount(manufacture.directed)
+# types of dyads
+dyad.census(manufacture.directed)
+
+# density of the network
+network.density(manufacture.directed)
+
+# types of triads
+triad.census(manufacture.directed)
+```
+in case of directed network amount of possible connections is $n(n-1)$. there are 310 total edges, so density is around 0.56, which is also a significant value.  
+number of mutual connections is higher than assymetrical, so more countries exchange goods rather than trade in *one direction*.  
+considering triads, there are only 18 transitive ones from 2024, and most frequent type is still 300 (all three countries are mutually connected). also there are many 021D triads, which represent the distribution from one country to two others.  
+
+## transitivity
+the transitivity is an important property of a network, which describes whether $a \rightarrow b \rightarrow c \Rightarrow a \rightarrow c$. usually in social networks this parameter is high, and in other networks not so. for random network transitivity coefficient is $m / \frac{n(n-1)}{2}$
+
+```{r}
+gtrans(manufacture.net, measure="weak") # transitivity
+```
+
+our network's transitivity coefficient is 0.78, which is a high value, as it should be in social networks. for comparison, in a random network with $m=195$ edges $T = \frac{195}{12 \cdot 23} = 0.7$, so expectations are quite correct.
+
+## reciprocity
+the reciprocity of a directed network reflects the proportion of edges that are symmetrical. that is, the proportion of outgoing edges that also have an incoming edge. it is commonly used to determine how inter-connected directed networks are. 
+
+```{r}
+grecip(manufacture.directed, measure = 'dyadic')
+grecip(manufacture.directed, measure = 'dyadic.nonnull')
+grecip(manufacture.directed, measure = 'edgewise')
+grecip(manufacture.directed, measure = 'edgewise.lrr')
+grecip(manufacture.directed, measure = 'correlation')
+```
+
+
+```{r}
+?grecip
+```
+
+
+
+
+
+
+```{r}
+
+
+```
+
+
+
+```{r}
+par(mar=c(1,1,1,1))
+plot(manufacture.net, mode = 'circle')
+```
+```{r fig.dim = c(10, 8)}
+plot(manufacture.net, mode = 'fruchtermanreingold', main="first", displaylabels=TRUE, label.cex=0.8, label.dist = 0.5)
+```
+```{r}
+plot(manufacture.net, mode = 'kamadakawai')
+```
+```{r}
+# install.packages('sna')
+```
+```{r}
+?network.layout
+```
+
+```{r}
+
+```
+
+```{r}
+par = list(c(10000))
+names(par) = c("niter")
+par
+```
+
+
+
+
+```{r}
+head(trade.att)
+```
+```{r}
+set.vertex.attribute(manufacture.net, attrname="POP_GROWTH", value=trade.att[,1])
+set.vertex.attribute(manufacture.net, attrname="GNP", value=trade.att[,2])
+set.vertex.attribute(manufacture.net, attrname="SCHOOLS", value=trade.att[,3])
+set.vertex.attribute(manufacture.net, attrname="ENERGY", value=trade.att[,4])
+```
+```{r}
+manufacture.net
+```
+
+is network not directed?
+
+
+
+
+
+
+
+
+
+
+
