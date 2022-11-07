@@ -6,6 +6,7 @@ date: "`r Sys.Date()`"
 output: 
   pdf_document:
     toc: true
+    extra_dependencies: ["float"]
 ---
 
 \newpage
@@ -13,14 +14,26 @@ output:
 # prepare packages and load data
 install packages (uncomment if needed):
 ```{r}
+# on arch you might need to install gcc-fortran (necessary for compiling igraph)
+
 # install.packages("network")
 # install.packages("sna")
+# install.packages("igraph")
+# install.packages("intergraph")
+# install.packages("knitr")
+# install.packages("CINNA")
+# install.packages("RColorBrewer")
 ```
 
 load data `trade.Rdata`:
 ```{r}
 suppressPackageStartupMessages(library(network))
 suppressPackageStartupMessages(library(sna))
+suppressPackageStartupMessages(library(intergraph))
+suppressPackageStartupMessages(library(knitr))
+suppressPackageStartupMessages(library(CINNA))
+suppressPackageStartupMessages(library(RColorBrewer))
+
 load("trade.Rdata")
 ```
 
@@ -127,7 +140,7 @@ network.density(manufacture.directed)
 triad.census(manufacture.directed)
 ```
 in case of directed network amount of possible connections is $n(n-1)$. there are 310 total edges, so density is around 0.56, which is also a significant value.  
-number of mutual connections is higher than assymetrical, so more countries exchange goods rather than trade in *one direction*.  
+number of mutual connections is higher than asymmetrical, so more countries exchange goods rather than trade in *one direction*.  
 considering triads, there are only 18 transitive ones from 2024, and most frequent type is still 300 (all three countries are mutually connected). also there are many 021D triads, which represent the distribution from one country to two others.  
 
 ## transitivity
@@ -140,85 +153,388 @@ gtrans(manufacture.net, measure="weak") # transitivity
 our network's transitivity coefficient is 0.78, which is a high value, as it should be in social networks. for comparison, in a random network with $m=195$ edges $T = \frac{195}{12 \cdot 23} = 0.7$, so expectations are quite correct.
 
 ## reciprocity
-the reciprocity of a directed network reflects the proportion of edges that are symmetrical. that is, the proportion of outgoing edges that also have an incoming edge. it is commonly used to determine how inter-connected directed networks are. 
-
+the reciprocity of a directed network reflects the proportion of edges that are symmetrical. that is, the proportion of outgoing edges that also have an incoming edge. it is commonly used to determine how inter-connected directed networks are.  
+now we may calculate different types of reciprocity.
 ```{r}
-grecip(manufacture.directed, measure = 'dyadic')
-grecip(manufacture.directed, measure = 'dyadic.nonnull')
-grecip(manufacture.directed, measure = 'edgewise')
-grecip(manufacture.directed, measure = 'edgewise.lrr')
-grecip(manufacture.directed, measure = 'correlation')
+grecip(manufacture.directed, measure = "dyadic")
+grecip(manufacture.directed, measure = "dyadic.nonnull")
+grecip(manufacture.directed, measure = "edgewise")
+grecip(manufacture.directed, measure = "edgewise.lrr")
+grecip(manufacture.directed, measure = "correlation")
 ```
 
+the first one calculates number of mutual diads divided by total number of null or asymmetrical diads. the second one is the same without asymmetrical diads. edgewise reciprocity is the proportion of ties that are mutual. last two are not comprehensive.  
+to interpret, number of mutual diads is 0.7 of asymmetrical + null and 0.6 of mutual + null. 0.74 of edges are mutual.  
+personally, I may see informative the following equation: proportion of mutual diads to all diads. the value is:
+```{r}
+dyad.census(manufacture.directed)[1,"Mut"] / sum(dyad.census(manufacture.directed))
+```
+so, only 0.4 of all potential connections are mutual, which is, in comparison, less than a half.
+
+## geodesic distances
+the geodesic distance is a shortest path between two nodes in a graph, i. e. a path with the minimum number of edges. obviously, it is defined for each pair of vertices, so the output is matrix $n \times n$.
 
 ```{r}
-?grecip
+gd = geodist(manufacture.net)
+sort(unique(c(gd$gdist)))
+sort(unique(c(gd$counts)))
 ```
 
+so, in our network the longest geodesic distance is 2, and the shortest is 1 (0 is between the same vertices). it means that any point could be reached in not more than 2 steps.  
+numbers of geodesic distances varies from 1 to 15, which is not so very interesting and again denotes the network is well-connected.  
 
-
-
-
+we can calculate an average distance in each column (of all geodesic distances to certain vertex) — also between 1 and 2.
 
 ```{r}
-
-
+colMeans(gd$gdist)
+mean(gd$gdist)
 ```
 
+in case of directed network the result is slightly different:
+```{r}
+gd = geodist(manufacture.directed)
+sort(unique(c(gd$gdist)))
+sort(unique(c(gd$counts)))
+gd = geodist(manufacture.directed, inf.replace = NA)
+colMeans(gd$gdist, na.rm = TRUE)
+mean(gd$gdist, na.rm = TRUE)
+```
 
+naturally, average distance and maximum distance are higher in case of directed network, because not every path is used in both directions.  
+
+\
+
+let's perform some more evaluations of the geodesic distance with `igraph` package:
 
 ```{r}
+manufacture.graph<-asIgraph(manufacture.net)
+manufacture.dgraph<-asIgraph(manufacture.directed)
+```
+```{r}
+detach(package:sna)
+suppressPackageStartupMessages(library(igraph))
+
+mean_distance(manufacture.graph, directed = FALSE, unconnected = TRUE)
+mean_distance(manufacture.dgraph, directed = TRUE, unconnected = TRUE)
+```
+
+mean values are quite the same as above.
+
+## centrality
+### degree centrality
+this type of centrality is basically the number of ties linked with certain node — which is the degree.
+```{r}
+indegree = degree(manufacture.dgraph, mode="in")
+outdegree = degree(manufacture.dgraph, mode="out")
+total = degree(manufacture.dgraph, mode="total")  # This is also called Freeman's degree
+```
+
+### betweenness, closeness, eigenvector
+betweenness centrality measures the number of shortest paths going through a specific
+vertex:
+```{r}
+between = betweenness(manufacture.dgraph)
+```
+
+closeness is the mean geodesic distance between a given node and all other nodes. in-closeness centrality is the average number of steps one would have to go through to get to a given node from all other reachable nodes, out-closeness centrality — vice versa.
+```{r}
+inclose = closeness(manufacture.dgraph, mode="in")
+outclose = closeness(manufacture.dgraph, mode="out")
+```
+
+eigenvector centrality gives greater weight to a node the more it is connected to other highly connected
+nodes. it is often interpreted as measuring the network importance of the node.
+```{r}
+ecentV = evcent(manufacture.graph)
+eigen = ecentV$vector
+```
+
+now put everything in one table.
+```{r}
+node = network.vertex.names(manufacture.net)
+table = data.frame(node, indegree, outdegree, total, between, inclose, outclose, eigen)
+names(table) = c("Country", "Indegree", "Outdegree", "Total", "Betweenness", "Incloseness", "Outcloseness", "Eigenvector")
+
+kable(table, digits=3, caption = "Manufacture Centralities")
+```
+
+## correlating centrality measures
+now we can observe how the centralities correlate with each other. 
+```{r}
+centralities = table[,c(2:8)]
+centralities[is.na(centralities)] = 0
+res = cor(centralities)
+kable(res, digits=2, caption="Correlations of  Centralities")
+```
+
+we see, that all values are more or less correlated, for example, Indegree and Incloseness, Outdegree and Outcloseness, Total and Eigenvector. so, if a country trades actively, its centralities are high as well.
+
+
+### additional centralities
+```{r}
+pr_cent = proper_centralities(manufacture.graph)
+NewCent = calculate_centralities(manufacture.graph, include = c(pr_cent[2], pr_cent[24]))
+NewCent = as.data.frame(NewCent)
+
+NewCent = data.frame(node, NewCent, stringsAsFactors = FALSE)
+names(NewCent) = c("Country", "Topological", "Markov")
+kable(NewCent, digits=3, caption = "Additional Network Centralities")
+```
+
+```{r}
+leaders = data.frame(
+                Topological=table[head(order(NewCent$Topological, decreasing = TRUE), 6), 1],
+                Markov=table[head(order(NewCent$Markov, decreasing = TRUE), 6), 1]
+              )
+kable(leaders, caption = "Additional centralities leaders")
+```
+
+the topological coefficient describes if a node shares neighbours with other nodes. Markov centrality (random walk closeness centrality) is a measure of centrality, which describes the average speed with which randomly walking processes reach a node from other nodes of the network.  
+surprisingly, the first centrality has shown the countries with zero betweenness centrality. so, these countries share neighbours with other. the second centrality picked up more or less popular countries.  
+
+\newpage
+
+# influential network indices
+now using the dataframe we may get the leaders in import and export — influential countries.
+```{r}
+leaders = data.frame(
+                Import=table[head(order(table$Indegree, decreasing = TRUE), 6), 1],
+                Export=table[head(order(table$Outdegree, decreasing = TRUE), 6), 1],
+                Total=table[head(order(table$Total, decreasing = TRUE), 6), 1],
+                Betweenness=table[head(order(table$Betweenness, decreasing = TRUE), 6), 1]
+              )
+kable(leaders, caption = "Trade leaders")
+```
+
+what we might observe is that there are several countries that are leading in each category (the USA, the UK, Japan, Spain, China). these are the most developed countries with the rich international trading. they have a lot of connections, which is demonstrated by **Degree centrality** statistics. also, as it was stated previously, top countries as a rule have all centralities at a high level, and the correlation is could be seen in the table.  
+
+besides frequent countries, Finland imports from many countries and Brazil exports to many countries, as their **Indegree and Outdegree centralities** are high, respectively.    
+
+```{r}
+leaders = data.frame(
+                Country=table[head(order(table$Eigenvector, decreasing = TRUE), 6), 1],
+                Eigenvector=table[head(order(table$Eigenvector, decreasing = TRUE), 6), 7]
+              )
+kable(leaders, digits=3, caption = "Eigenvector centrality leaders")
+```
+
+what concerns **Eigenvector centrality**, it measures the transitive influence of nodes and thus represents the network importance of the node. connections with high-scoring nodes contribute more to the score of a node than connections from low-scoring nodes.
+
+as expected, Spain, Japan, UK and US have high value of **Eigenvector centrality**. in addition, in this case Switzerland has also very significant score. we cannot state that it has the highest value, as several countries actually have the same value (1.0 in this case). so, they all could be called transitive influential (they have more connections with top-scoring countries).
+
+\newpage
+
+# visualisation
+now we are ready to visualise our network. to begin, load `network` package
+```{r}
+detach(package:igraph)
+suppressPackageStartupMessages(library(network))
+```
+we will use nice colour palettes to plot the network.
+```{r}
+pastel2 = brewer.pal(8, "Pastel2")
+accent = brewer.pal(5, "Accent")
+```
+at first, let's draw a `circle` plot:
+```{r fig.cap = "Circle plot", fig.dim = c(6.3, 6.3), fig.pos = "!h"}
 par(mar=c(1,1,1,1))
-plot(manufacture.net, mode = 'circle')
-```
-```{r fig.dim = c(10, 8)}
-plot(manufacture.net, mode = 'fruchtermanreingold', main="first", displaylabels=TRUE, label.cex=0.8, label.dist = 0.5)
-```
-```{r}
-plot(manufacture.net, mode = 'kamadakawai')
-```
-```{r}
-# install.packages('sna')
-```
-```{r}
-?network.layout
+plot(
+        manufacture.net, 
+        mode = "circle",
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.col = accent[1],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
 ```
 
-```{r}
+this is not a very informative presentation, the only possible conclusion is that there are many connections in the network and some nodes have more ties than others.  
 
+now we can plot this network again using `fruchtermanreingold` mode. at this time we may alter the size of vertices according to its centrality (for example, total degree centrality).  
+
+```{r fig.cap = "Size based on Total Degree centrality", fig.dim = c(10, 8), fig.pos = "!h"}
+plot(
+        manufacture.net, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = accent[2],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
 ```
 
-```{r}
-par = list(c(10000))
-names(par) = c("niter")
-par
+now let's make the colour indicate if a node has more outcoming than incoming edges. 
+```{r fig.cap = "Orange if more incoming, blue if more outcoming edges", fig.dim = c(10, 8), fig.pos = "!h"}
+inout = ifelse(indegree > outdegree, accent[3], pastel2[3])
+plot(
+        manufacture.directed, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = inout,
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
 ```
 
+we observe that countries on periphery of the graph (such as Madagascar, Honduras, Syria) have mostly incoming edges, so they import from more countries than export to. this could probably be explained with the necessity to import a lot of different manufactured good from a wide range of international partners.
 
-
+## attributes
+finally, we should utilise network attributes from the given data. 
 
 ```{r}
 head(trade.att)
+summary(trade.att)
 ```
+as we see, `trade.att` contains `POP_GROWTH`, `GNP`, `SCHOOLS` and `ENERGY` columns. as we know from description, these measures represent "average population growth between 1970 and 1981, average GNP
+growth per capita over the same period, secondary school enrollment ratio in 1981, and energy consumption
+in 1981 (in kilo coal equivalents per capita)". 
+
+`POP_GROWTH` varies from 0.1 to 3.7, `GNP` — from -1.9 to 5.9, `SCHOOLS` — from 1 to 97, and the possible maximum value is 100, as for the ration, and `ENERGY` lies between 24 and 11626. however, with last one, mean, median and even 3rd quartile are significantly lower than maximum value, which is a sign for some not numerous high values.
+
+now we may apply attributes to the vertices:
 ```{r}
 set.vertex.attribute(manufacture.net, attrname="POP_GROWTH", value=trade.att[,1])
 set.vertex.attribute(manufacture.net, attrname="GNP", value=trade.att[,2])
 set.vertex.attribute(manufacture.net, attrname="SCHOOLS", value=trade.att[,3])
 set.vertex.attribute(manufacture.net, attrname="ENERGY", value=trade.att[,4])
 ```
-```{r}
-manufacture.net
+
+we can illustrate all of them with colour gradient.
+
+### POP_GROWTH
+```{r fig.cap = "More intense colour means higher `POP_GROWTH`", fig.dim = c(10, 8), fig.pos = "!h"}
+
+col_palette = brewer.pal(9, "Oranges")
+colour_codes = as.numeric(cut(get.vertex.attribute(manufacture.net, "POP_GROWTH"), breaks = 9))
+
+plot(
+        manufacture.net, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = col_palette[colour_codes],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
+```
+according to colours, leading countries in terms of volume of population are in the periphery of the graph, namely Syria, Liberia, Ecuador, Honduras, Algeria. lack of growth could be observed in central countries such as the UK, Switzerland, Finland, the USA. comparing with the size of nodes, fast-growing populations have lesser trade connections (and smaller size on the plot), while slow-growing countries have big or moderate number of links.
+
+### GNP
+```{r fig.cap = "More intense colour means higher `GNP`", fig.dim = c(10, 8), fig.pos = "!h"}
+
+col_palette = brewer.pal(9, "BuPu")
+colour_codes = as.numeric(cut(get.vertex.attribute(manufacture.net, "GNP"), breaks = 9))
+
+plot(
+        manufacture.net, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = col_palette[colour_codes],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
+```
+speaking of GNP, leading countries here are Indonesia, Egypt, Brazil, Ecuador, Yugoslavia, Algeria. on the contrary, Liberia, Honduras, Ethiopia, Madagascar demonstrate worse economical perfomance. what is significant, the top countries are not the biggest on the plot — they have moderate number of links and middle size, which, probably, have a good potential for increase.  
+
+underperforming countries, as no surprise, have very minimal sizes on the plot.
+
+there are two white circles on the graph — data from China and Czechoslovakia is not available. 
+
+### SCHOOLS
+```{r fig.cap = "More intense colour means higher `SCHOOLS`", fig.dim = c(10, 8), fig.pos = "!h"}
+
+col_palette = brewer.pal(9, "Greens")
+colour_codes = as.numeric(cut(get.vertex.attribute(manufacture.net, "SCHOOLS"), breaks = 9))
+
+plot(
+        manufacture.net, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = col_palette[colour_codes],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
+```
+in terms of school enrollment ratio, results are quite predicatble as well. in the developed countries with numerous edges the shade is darker, as school enrollment is at its peak. in countries with less amount of trade activity, observed educational score is not impressive as well. 
+
+### ENERGY
+```{r fig.cap = "More intense colour means higher `ENERGY`", fig.dim = c(10, 8), fig.pos = "!h"}
+
+col_palette = brewer.pal(9, "Reds")
+colour_codes = as.numeric(cut(get.vertex.attribute(manufacture.net, "ENERGY"), breaks = 9))
+
+plot(
+        manufacture.net, 
+        mode = "fruchtermanreingold", 
+        displaylabels = TRUE, 
+        label.cex = 0.6, 
+        vertex.cex = 2 * total / 41,
+        edge.lwd = 0.1,
+        layout.par = list(niter = 2000),
+        vertex.col = col_palette[colour_codes],
+        edge.col = pastel2[8],
+        label.col = accent[5]
+    )
 ```
 
-is network not directed?
+speaking of energy, the biggest consumer of it is the United States, after it there are some more countries (e. g. the UK, Finland, Switzerland, Japan, Czechoslovakia). these states have lots of edges, which proves them actively participating in the international trade with wide ranges of other countries. on the other hand, countries with limited energy consumption (most of the countries, probably) are less in size on the graph, as they are less active in trading with other countries. 
+
+
+## igraph
+finally, we can switch to the `igraph` package. 
+```{r}
+detach(package:network)
+suppressPackageStartupMessages(library(igraph))
+```
+now let's plot the network with size corresponding to Betweenness, and its colour corresponding to Eigenvector
+```{r fig.cap = "More intense colour means higher Eigenvector, and bigger size means higher Betweenness", fig.dim = c(10, 8), fig.pos = "!h"}
+col_palette = brewer.pal(9, "OrRd")
+colour_codes = as.numeric(cut(eigen, breaks = 9))
+plot(
+    graph.adjacency(manufacture),
+    vertex.size = 5 + 0.35 * between,
+    edge.arrow.size = 0.3,
+    edge.color=pastel2[8],
+    vertex.label.cex = 0.9,
+    vertex.color = col_palette[colour_codes],
+    vertex.shape = 'circle',
+    vertex.frame.color = pastel2[7],
+    vertex.label.dist = 1.5,
+    vertex.label.color = accent[5]
+)
+```
+
+
+here it is clearly seen that United States and United Kingdom have the highest betweenness, which means that the number of shortest paths going through these vertices is higher than in others, so these node are important for the network. also these nodes have a very strong colour, as their transitive influence is significant (Eigenvector). the situation is reversed on the periphery.
+
+\newpage
+
+# community detection
 
 
 
 
 
+\newpage
 
-
-
-
-
-
+# conclusions
