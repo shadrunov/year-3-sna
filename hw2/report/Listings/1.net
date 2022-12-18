@@ -1,0 +1,40 @@
+*Vertices 13
+   1 "5 WE"
+   2 "5 HL"
+   3 "5 JA"
+   4 "4 JR"
+   5 "6 CA"
+   6 "3 CC"
+   7 "3 CW"
+   8 "4 MS"
+   9 "4 RN"
+   10 "4 LN"
+   11 "5 RB"
+   12 "4 JR"
+   13 "6 DP"
+*Arcs
+   3 8 1 c Dandelion
+   3 11 -1 c RedOrange
+   6 2 1 c Dandelion
+   6 9 1 c Dandelion
+   7 11 -1 c RedOrange
+   7 13 -1 c RedOrange
+   8 5 1 c Dandelion
+   9 11 -1 c RedOrange
+   10 5 1 c Dandelion
+   10 11 -1 c RedOrange
+   11 5 1 c Dandelion
+   11 12 1 c Dandelion
+*Edges
+   1 2 1 c RedViolet
+   1 5 1 c RedViolet
+   2 5 1 c RedViolet
+   3 7 1 c RedViolet
+   3 4 1 c RedViolet
+   3 12 1 c RedViolet
+   4 7 1 c RedViolet
+   4 8 1 c RedViolet
+   7 8 1 c RedViolet
+   7 12 1 c RedViolet
+   8 10 1 c RedViolet
+   8 12 1 c RedViolet

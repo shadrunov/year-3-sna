@@ -1,0 +1,209 @@
+\section{Task 1}
+In this task, we were to transform the Network 8 (“Positive and negative choices in a football team”) to Pajek \cite{Pfeffer2019}. The given network is \textbf{unimodal} (vertices represent only football players), \textbf{signed} (positive and negative relationships are observed between players), and both \textbf{arcs and edges} are present in the network. The original network is displayed in the figure below.
+
+\image{image3.png}{Original network}{}
+
+At first, we created a Pajek’s network data format (\texttt{.net}) file with all vertices, arcs and edges of the network \cite{batagelj_ppt_2002}. In addition, the colours of lines were specified \cite{manual2022}. The structure of the file is listed below.
+
+\lstinputlisting[caption={Pajek net file}]{Listings/1.net}
+
+Next, we proceeded with visualisation of the network \cite{pajek_workshop}. After selecting \texttt{Draw} command, the default circular layout of the network appeared (Figure 2). 
+
+\image{image22.png}{Default layout}{}
+
+To restore the resemblance, we need to manually move vertices, as on the original network. The layout might be not very neat, however, it represents the \textbf{actual positions} of a football team in a stadium. This way we understand how the observed network describes the actual situation in a football game. 
+
+The result is in the Figure 3.
+
+\image{football.png}{The layout similar to the given network}{}
+
+As it is common in network analysis, negative links are drawn with \textbf{dotted lines}, and here we additionally marked them with red colour. Arcs have arrows on the ends and they are orange or red, and edges are violet (all edges are positive).
+
+We may try another layout — \textbf{Kamada-Kawai}. This layout puts important vertices closer to the centre of the diagram. The result looks satisfying (Figure 4)
+
+\image{kawai.png}{The layout similar to the given network}{}
+
+\clearpage
+
+
+
+\section{Task 2}
+In this task, we are to analyse the Mexican polite elite network, which is displayed in the picture below. At first glance, one can notice that the given network is undirected and unweighted. Let us examine the network more closely.
+
+\image{image29.png}{Mexican polite elite network}{}
+
+
+\subsection{Subtask 1}
+Overall, the network has \textbf{35 vertices}, which represent Mexican presidents and close collaborators, and \textbf{117 edges} that indicate the presence of political, kinship, friendship, or business ties between the actors (Figure 6). Also, our network has zero arcs (due to its \textbf{undirected nature}), no loops. Given that all of the network’s lines are equal to 1, we can confirm that the network is \textbf{unweighted}. Since the observed network does not differentiate between the types of actor interaction, it is \textbf{unimodal} and \textbf{does not contain multiple lines}. The density of our network, which is basically the ratio of links to nodes, is quite low, reaching 0.196, which means that only 19.6 percent of all possible edges are present. This implies that the network is not as connected as it could be. The network’s \textbf{average degree} equals \textbf{6.69}, which suggests that on average, each node in the network has 6.69 links.
+
+\image{image7.png}{General network information}{0.8}
+\image{image13.png}{the network is unweighted}{0.4}
+\FloatBarrier
+
+
+As can be noticed from Figure 8, the network’s \textbf{lowest degree} equals 2 (Cuauhtémoc Cárdenas), whereas the largest amounts — to 17 (Miguel Alemán Valdés). Thus, we can conclude that having direct contact with many other actors, Miguel Alemán Valdés is the \textbf{most influential node} in our network. The network’s plot with the vertex sizes and colours adjusted by their degree values can be viewed in the ....
+
+\image{image1.png}{Degree}{0.8}
+
+The network’s \textbf{diameter} amounts to 4, which refers to the length of the longest shortest path —  in our case, it is the path from Madero Francisco to José López Portillo (Figure 9).
+
+\image{image30.png}{Degree}{}
+
+Our network has only \textbf{one component}, consisting of the whole graph (Figure 10). As is known, an undirected graph is called connected if there is a path between every pair of distinct vertices of the graph. Since a component of a graph is defined as a maximal subgraph in which a path exists from every node to every other, we can conclude that the given network is \textbf{connected}.
+
+\image{image27.png}{Number of components}{0.8}
+
+Looking at the \textbf{triad census} of our network, one can not help but notice that only 4 types of triads are present (a characteristic of undirected graphs): an \textbf{empty triad} (003), a triad with a \textbf{reciprocated connection} between two vertices (102), a triad with \textbf{two mutual relations and one null relation} (201), a \textbf{complete triad} (300). So, it is obvious that there are many cases of empty triads, or triads with one reciprocated connection (Figure 11). 
+
+Meanwhile, triads with two relations, or the ones in which all three dyads have a relationship are not as common. Thus, since the majority of triads are concentrated in the left side of the triad distribution, we can assume that the network is \textbf{not quite connected}. This corresponds to the fact that only 19.6 percent of all possible edges are present.
+
+\image{image10.png}{Triadic Census}{}
+\FloatBarrier
+\clearpage
+
+
+\subsection{Subtask 2}
+As expected, the largest \textbf{(weak) component} is the whole graph. The result corresponds to the one we have established in the Subtask 1 because there is no distinction between weak and strong components in undirected graphs.
+
+\image{image11.png}{Triadic Census}{}
+\FloatBarrier
+
+Now, we are to compute the \textbf{standard importance measures} of the largest component — the network itself — and rank nodes in accordance with their centrality values.
+
+High \textbf{betweenness} indicates an actor who is on many paths between other actors. The higher the value, the more powerful the actor is. In our case, with the betweenness value amounting to 0.2303, the most powerful actor is Miguel Alemán Valdés. The second best is Lázaro Cárdenas, whose score is lower by 0.0732 points (Figure 13).
+
+\image{image8.png}{Betweenness Centrality}{}
+% \FloatBarrier
+
+The \textbf{closeness centrality} of a node measures its average farness (inverse distance) to all other nodes. The highest value equals 0.6667, while the lowest amounts to 0.3864. Thus, as expected, the node with the shortest distances to all other nodes is Miguel Alemán Valdés, whereas Lázaro Cárdenas is a few points behind him  (Figure 14).
+
+\image{image20.png}{Closeness Centrality}{}
+% \FloatBarrier
+
+\textbf{Freeman’s degree centrality} shows the number of connections that the political elites have. Having direct contact with 17 actors, Miguel Alemán Valdés is the most central node. Following Miguel Alemán Valdés with 13 ties, Adolfo Ruiz Cortines ranks second.
+
+\image{image16.png}{All Degree Centrality}{}
+\FloatBarrier
+
+
+Let us plot the network, partitioned by the degree centrality measure (Figure 16).
+
+\image{image28.png}{All Degree Centrality}{}
+
+In this layout, the vertex with the highest degree value is at the top, whereas the least central ones are positioned below. The nodes are coloured according to their degree values as well.
+
+As can be seen, the most common degree value is 6 (7 actors), while the most unique ones are 2, 11, 13, 17. With only two connections present, Cuauhtémoc Cárdenas is the least central node, whereas positioned at the very top, Miguel Alemán Valdés is the most powerful one.
+
+
+\FloatBarrier
+\clearpage
+
+
+\subsection{Subtask 3}
+Now, let us determine the cores in our network (Figure 17).
+
+\image{image23.png}{All core partition}{}
+
+\textbf{Coreness} is a measure that can help identify tightly interlinked groups within a network. A \textbf{k-core} is a maximal group of entities, all of which are connected to at least k other entities in the group.  In the k-core, each actor is connected to at least k other actors. The given network contains a large 5-core (25 vertices). In addition, there is a 2-core (2 vertices), a 3-core (5 vertices), and a 4-core (3 vertices).
+
+Given that the 5-core is the  one, we can conclude that the actors in our network entertain close ties with a large group of people: 71.42 per cent of the members of the elites socialise with at least 5 other political actors.
+
+The plot of the largest core is shown below.
+
+\image{image4.png}{The plot of the largest core}{}
+\FloatBarrier
+\clearpage
+
+
+
+\subsection{Subtask 4}
+Now we have to use an \textbf{island approach} to determine some link islands in the network.
+
+By definition, an \textbf{island} is a subnetwork of vertices connected directly or indirectly by lines with a value greater than the lines to vertices outside the subnetwork \cite{de_nooy_2018}. So, to successfully apply this approach we need to measure the values of links in the network. To do so, we may use the 3-rings method. 
+
+\textbf{3-rings} method means that the ring counts are stored as line values — how many times each line belongs to 3-rings. In Pajek, we select \texttt{Create New Network > with Ring Counts stored as Line Values > 3-Rings > Undirected}. The result is on the figure below.
+
+\image{image6.png}{Weighted network}{}
+
+Next, we should try and determine some link islands in the network. To select islands, we have to specify the \textbf{maximum size} of it. Depending on this, the number of islands varies. First, we select 10, and then the number will be increased to 18.
+
+\subsubsection{Maximum Size 18}
+Firstly, we create a weighted network (\texttt{Create New Network > with Ring Counts stored as Line Values > 3-Rings > Undirected}). Then we enable \texttt{Generate Network with Islands} and select \texttt{Network > Create Partition > Islands > Line Weights, Maximum Size — 18, Minimum Size — 2} (Figure 20-21). Next, we remove isolated vertices (\texttt{Network > Create Partition > Degree > All, Operations > Network + Partition > Extract > SubNetwork Induced by Union of Selected Clusters}).
+
+\image{image15.png}{Generate Islands}{0.88}
+\image{image26.png}{Remove isolated vertices}{0.88}
+\FloatBarrier
+
+After all, we can get a very nice diagram by drawing \texttt{Network + First Partition} and selecting \texttt{Separate Components}.
+
+\image{image17.png}{Generated Islands}{0.85}
+
+What we see is \textbf{three islands}, and colours in this case represent the \textbf{height of each vertex} (for example, white one is the highest point of the island). The big island contains \textbf{13 vertices}, and two others — \textbf{2 and 5 vertices} (Figure 23).  
+
+\image{image19.png}{Islands}{0.7}
+
+In order to interpret the picture, we should apply given \textbf{attributes} to the network (military/civilians and year). For doing that, we have to \textbf{cut unused items} from \texttt{mexican\_year.clu} and \texttt{mexican\_military.clu} partitions (add islands partition as the second one and select \texttt{Partitions > Extract SubPartition (Second from First)}. Also we copy the year partition to a vector, thus we can add these values to vertex labels: \texttt{Options > Mark Vertices Using > Vector Values}).
+
+
+\image{image25.png}{Islands with attributes}{}
+\FloatBarrier
+
+Here we see that the big island consists \textbf{mostly of civilians} (green colour), so those civilian actors form a cohesive group with links of significant values. Also this island is mostly constructed of people who were active in the \textbf{second half of the century}, as can be observed from the labels.
+
+The island of size 5 consists of three military and two civilian actors, all of whom were active \textbf{between 1911 and 1928}. So it may be suggested that during that time such a mixed group was active.
+
+The island of size 2 is not particularly informative.
+\clearpage
+
+
+
+\subsubsection{Maximum Size 10}
+Let’s reduce the maximum size of an island to 10. Create new islands with \texttt{Network > Create Partition > Islands > Line Weights, Maximum Size — 10, Minimum Size — 2}. Also we remove isolated vertices (\texttt{Network > Create Partition > Degree > All, Operations > Network + Partition > Extract > SubNetwork Induced by Union of Selected Clusters}). The result is on the figure below.
+
+\image{image12.png}{Generated Islands}{}
+\FloatBarrier
+
+Again, we should apply attributes to the islands (Figure 26).
+
+\image{image24.png}{Islands with attributes}{}
+\FloatBarrier
+
+As might be seen, two small islands did not change, and the biggest island now contains only \textbf{9 vertices}. They are \textbf{mostly civilians}, except one (with the most height).
+
+This version of the island is \textbf{more coherent} than in the previous case, and here we may see that all actors have been active \textbf{since 1946} (after World War II). Furthermore, this island might have been “started” with the military person \textit{Aleman Valdes} (1946), as he is in the middle of the island, and all other actors who performed later are directly or indirectly connected to him.
+\clearpage
+
+
+\subsection{Subtask 5}
+
+Now we need to make a \textbf{line-cut} of the network. Line-cut is another useful technique for \textbf{extracting parts of a network} where only lines (and their vertices) above a certain value are retained \cite{batagelj_doreian_ferligoj_kejzar_2014}. In other words, we select only those parts of the network where values of lines are above a certain threshold, and those parts are probably of more importance than others.
+
+To do so in Pajek, we start with the \textbf{weighted network} from the previous step and select \texttt{Network > Create New Network > Transform > Remove > Lines with Value > lower than}. But before we start, it is useful to analyse what \textbf{line values} are present in the network (\texttt{Network > Info > Line Values}, Figure 27).
+
+\image{image14.png}{Line Values}{}
+\FloatBarrier
+
+As we see, lines with values from 0 to 2 form 52\% of the network, so to get more important half of it, we may cut starting with value 3.
+
+\image{image2.png}{Line-cut}{}
+\FloatBarrier
+
+After applying attributes, we see that the separated part of the network is rather massive. It contains mostly civilians, however, all military actors are connected with each other. It also could be noticed that years are increasing from right to left, specifically on the left there is a well-connected group of vertices (in a star shape) with year varying between 1911 and 1928. In fact, this group has already been observed before, as it is an island.
+
+\image{image18.png}{The result of line-cut of 3}{}
+\FloatBarrier
+
+Let’s cut further and select the threshold of 4.
+
+\image{image21.png}{The result of line-cut of 4}{}
+\FloatBarrier
+
+Now the smaller island is separated from the bigger one, and the number of vertices decreased as well. In fact, the big one is similar to the big island we discussed earlier. So we may conclude that in our case \textbf{line-cut works similarly to the island approach}.
+
+Additionally, if we remove isolated vertices from the line-cut network, we can limit the property partitions by doing the following. \texttt{Select All degree partition, then Partition > Binarize partition}. Then Extract SubPartition and copy the result to vector.
+
+
+\clearpage
+
+
+\subsection{Subtask 6}
