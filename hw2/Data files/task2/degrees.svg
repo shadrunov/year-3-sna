@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 1. mexican_power.net (35) -->
+<!-- Creator: Pajek 5.16: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 12-16-2022, 1:48:45 -->
+<svg xml:space="preserve" viewBox="0 0 1314 902" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>1. mexican_power.net (35)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 884)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L1296 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 884)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L1296 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+
+<g id="c0on" visibility="visible">
+  <ellipse style="fill:rgb(102,0,0);stroke:rgb(102,0,0);stroke-width:0.00" rx="5" ry="5" cx="6" cy="10"/> 
+</g>
+<g id="c0off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(102,0,0);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="10"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c0off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c0on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="14"><tspan>Lines among clusters</tspan></text>
+
+<g id="c0">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c0on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c0off.click"/>
+<!-- Edge:     1    2 -->
+<line x1="1100.47" y1="640.42" x2="952.65" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     1    6 -->
+<line x1="1100.47" y1="640.42" x2="1051.20" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     1    7 -->
+<line x1="1100.47" y1="640.42" x2="657.00" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2    3 -->
+<line x1="952.65" y1="532.18" x2="952.65" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2    4 -->
+<line x1="952.65" y1="532.18" x2="804.83" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2    5 -->
+<line x1="952.65" y1="532.18" x2="657.00" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2    6 -->
+<line x1="952.65" y1="532.18" x2="1051.20" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2    8 -->
+<line x1="952.65" y1="532.18" x2="1079.36" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     2   18 -->
+<line x1="952.65" y1="532.18" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     3    7 -->
+<line x1="952.65" y1="640.42" x2="657.00" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     3    8 -->
+<line x1="952.65" y1="640.42" x2="1079.36" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     3   10 -->
+<line x1="952.65" y1="640.42" x2="854.10" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     4    7 -->
+<line x1="804.83" y1="640.42" x2="657.00" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     4   10 -->
+<line x1="804.83" y1="640.42" x2="854.10" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     4   14 -->
+<line x1="804.83" y1="640.42" x2="775.26" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     5    8 -->
+<line x1="657.00" y1="640.42" x2="1079.36" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     5    9 -->
+<line x1="657.00" y1="640.42" x2="910.41" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     5   10 -->
+<line x1="657.00" y1="640.42" x2="854.10" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     5   12 -->
+<line x1="657.00" y1="640.42" x2="657.00" y2="45.10" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     6   18 -->
+<line x1="1051.20" y1="802.78" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     7   10 -->
+<line x1="657.00" y1="532.18" x2="854.10" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     7   11 -->
+<line x1="657.00" y1="532.18" x2="1011.78" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     7   22 -->
+<line x1="657.00" y1="532.18" x2="403.59" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     7   23 -->
+<line x1="657.00" y1="532.18" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     8   12 -->
+<line x1="1079.36" y1="694.54" x2="657.00" y2="45.10" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     9   10 -->
+<line x1="910.41" y1="694.54" x2="854.10" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     9   11 -->
+<line x1="910.41" y1="694.54" x2="1011.78" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     9   18 -->
+<line x1="910.41" y1="694.54" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   11 -->
+<line x1="854.10" y1="315.70" x2="1011.78" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   12 -->
+<line x1="854.10" y1="315.70" x2="657.00" y2="45.10" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   13 -->
+<line x1="854.10" y1="315.70" x2="854.10" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   14 -->
+<line x1="854.10" y1="315.70" x2="775.26" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   16 -->
+<line x1="854.10" y1="315.70" x2="741.47" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   31 -->
+<line x1="854.10" y1="315.70" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    11   12 -->
+<line x1="1011.78" y1="586.30" x2="657.00" y2="45.10" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    11   18 -->
+<line x1="1011.78" y1="586.30" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    11   22 -->
+<line x1="1011.78" y1="586.30" x2="403.59" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   14 -->
+<line x1="657.00" y1="45.10" x2="775.26" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   16 -->
+<line x1="657.00" y1="45.10" x2="741.47" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   17 -->
+<line x1="657.00" y1="45.10" x2="657.00" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   18 -->
+<line x1="657.00" y1="45.10" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   19 -->
+<line x1="657.00" y1="45.10" x2="854.10" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   20 -->
+<line x1="657.00" y1="45.10" x2="459.90" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   22 -->
+<line x1="657.00" y1="45.10" x2="403.59" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   23 -->
+<line x1="657.00" y1="45.10" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   24 -->
+<line x1="657.00" y1="45.10" x2="459.90" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   25 -->
+<line x1="657.00" y1="45.10" x2="302.22" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   27 -->
+<line x1="657.00" y1="45.10" x2="509.17" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   28 -->
+<line x1="657.00" y1="45.10" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    12   34 -->
+<line x1="657.00" y1="45.10" x2="262.80" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    13   14 -->
+<line x1="854.10" y1="802.78" x2="775.26" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    13   15 -->
+<line x1="854.10" y1="802.78" x2="538.74" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    14   20 -->
+<line x1="775.26" y1="586.30" x2="459.90" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    14   32 -->
+<line x1="775.26" y1="586.30" x2="361.35" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    15   20 -->
+<line x1="538.74" y1="586.30" x2="459.90" y2="315.70" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    15   27 -->
+<line x1="538.74" y1="586.30" x2="509.17" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    15   29 -->
+<line x1="538.74" y1="586.30" x2="854.10" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    15   32 -->
+<line x1="538.74" y1="586.30" x2="361.35" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    15   33 -->
+<line x1="538.74" y1="586.30" x2="213.53" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    16   18 -->
+<line x1="741.47" y1="694.54" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    16   19 -->
+<line x1="741.47" y1="694.54" x2="854.10" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    17   18 -->
+<line x1="657.00" y1="802.78" x2="657.00" y2="261.58" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    17   23 -->
+<line x1="657.00" y1="802.78" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   19 -->
+<line x1="657.00" y1="261.58" x2="854.10" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   21 -->
+<line x1="657.00" y1="261.58" x2="572.53" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   23 -->
+<line x1="657.00" y1="261.58" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   24 -->
+<line x1="657.00" y1="261.58" x2="459.90" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   28 -->
+<line x1="657.00" y1="261.58" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    18   30 -->
+<line x1="657.00" y1="261.58" x2="459.90" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   21 -->
+<line x1="854.10" y1="423.94" x2="572.53" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   25 -->
+<line x1="854.10" y1="423.94" x2="302.22" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   26 -->
+<line x1="854.10" y1="423.94" x2="234.64" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   27 -->
+<line x1="854.10" y1="423.94" x2="509.17" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   28 -->
+<line x1="854.10" y1="423.94" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    19   30 -->
+<line x1="854.10" y1="423.94" x2="459.90" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   21 -->
+<line x1="459.90" y1="315.70" x2="572.53" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   23 -->
+<line x1="459.90" y1="315.70" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   25 -->
+<line x1="459.90" y1="315.70" x2="302.22" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   26 -->
+<line x1="459.90" y1="315.70" x2="234.64" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   28 -->
+<line x1="459.90" y1="315.70" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   29 -->
+<line x1="459.90" y1="315.70" x2="854.10" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   31 -->
+<line x1="459.90" y1="315.70" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   32 -->
+<line x1="459.90" y1="315.70" x2="361.35" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    20   33 -->
+<line x1="459.90" y1="315.70" x2="213.53" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    21   23 -->
+<line x1="572.53" y1="694.54" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    21   31 -->
+<line x1="572.53" y1="694.54" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    22   23 -->
+<line x1="403.59" y1="694.54" x2="657.00" y2="369.82" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    22   27 -->
+<line x1="403.59" y1="694.54" x2="509.17" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    23   25 -->
+<line x1="657.00" y1="369.82" x2="302.22" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    23   27 -->
+<line x1="657.00" y1="369.82" x2="509.17" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    23   28 -->
+<line x1="657.00" y1="369.82" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    23   31 -->
+<line x1="657.00" y1="369.82" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    24   30 -->
+<line x1="459.90" y1="802.78" x2="459.90" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    25   26 -->
+<line x1="302.22" y1="586.30" x2="234.64" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    25   28 -->
+<line x1="302.22" y1="586.30" x2="361.35" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    26   29 -->
+<line x1="234.64" y1="694.54" x2="854.10" y2="748.66" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    27   31 -->
+<line x1="509.17" y1="640.42" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    28   31 -->
+<line x1="361.35" y1="532.18" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    28   33 -->
+<line x1="361.35" y1="532.18" x2="213.53" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    29   32 -->
+<line x1="854.10" y1="748.66" x2="361.35" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    30   31 -->
+<line x1="459.90" y1="748.66" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    31   32 -->
+<line x1="459.90" y1="423.94" x2="361.35" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    31   33 -->
+<line x1="459.90" y1="423.94" x2="213.53" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    33   34 -->
+<line x1="213.53" y1="640.42" x2="262.80" y2="802.78" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    10   35 -->
+<line x1="854.10" y1="315.70" x2="657.00" y2="856.90" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    34   35 -->
+<line x1="262.80" y1="802.78" x2="657.00" y2="856.90" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+</g>
+
+<g id="c1on" visibility="visible">
+  <ellipse style="fill:rgb(127,255,0);stroke:rgb(127,255,0);stroke-width:0.00" rx="5" ry="5" cx="6" cy="23"/> 
+</g>
+<g id="c1off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(127,255,0);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="23"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c1off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c1on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="27"><tspan>2</tspan></text>
+
+<g id="c1">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c1on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c1off.click"/>
+<!-- Vertex:    35 -->
+<ellipse cx="657.00" cy="856.90" rx="14.14" ry="14.14" style="fill:rgb(127,255,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="876.22" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Cardenas, Cuauhtemoc</text>
+</g>
+
+<g id="c2on" visibility="visible">
+  <ellipse style="fill:rgb(255,0,0);stroke:rgb(255,0,0);stroke-width:0.00" rx="5" ry="5" cx="6" cy="36"/> 
+</g>
+<g id="c2off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(255,0,0);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="36"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c2off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c2on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="40"><tspan>3</tspan></text>
+
+<g id="c2">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c2on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c2off.click"/>
+<!-- Vertex:     6 -->
+<ellipse cx="1051.20" cy="802.78" rx="17.32" ry="17.32" style="fill:rgb(255,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="1056.38" y="822.10" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Trevino, Jacinto B.</text>
+<!-- Vertex:    13 -->
+<ellipse cx="854.10" cy="802.78" rx="17.32" ry="17.32" style="fill:rgb(255,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="859.28" y="822.10" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Beteta, Ignacio</text>
+<!-- Vertex:    17 -->
+<ellipse cx="657.00" cy="802.78" rx="17.32" ry="17.32" style="fill:rgb(255,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="822.10" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Carvajal, Angel</text>
+<!-- Vertex:    24 -->
+<ellipse cx="459.90" cy="802.78" rx="17.32" ry="17.32" style="fill:rgb(255,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="465.08" y="822.10" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Ruiz Galindo, Antonio</text>
+<!-- Vertex:    34 -->
+<ellipse cx="262.80" cy="802.78" rx="17.32" ry="17.32" style="fill:rgb(255,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="267.98" y="822.10" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Aleman Velasco, Miguel</text>
+</g>
+
+<g id="c3on" visibility="visible">
+  <ellipse style="fill:rgb(0,0,255);stroke:rgb(0,0,255);stroke-width:0.00" rx="5" ry="5" cx="6" cy="49"/> 
+</g>
+<g id="c3off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,0,255);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="49"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c3off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c3on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="53"><tspan>4</tspan></text>
+
+<g id="c3">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c3on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c3off.click"/>
+<!-- Vertex:    29 -->
+<ellipse cx="854.10" cy="748.66" rx="20.00" ry="20.00" style="fill:rgb(0,0,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="859.28" y="767.98" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Lopez Portillo, Jose</text>
+<!-- Vertex:    30 -->
+<ellipse cx="459.90" cy="748.66" rx="20.00" ry="20.00" style="fill:rgb(0,0,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="465.08" y="767.98" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Loyo, Gilberto</text>
+</g>
+
+<g id="c4on" visibility="visible">
+  <ellipse style="fill:rgb(255,216,242);stroke:rgb(255,216,242);stroke-width:0.00" rx="5" ry="5" cx="6" cy="62"/> 
+</g>
+<g id="c4off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(255,216,242);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="62"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c4off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c4on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="66"><tspan>5</tspan></text>
+
+<g id="c4">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c4on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c4off.click"/>
+<!-- Edge:     8    9 -->
+<line x1="1079.36" y1="694.54" x2="910.41" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    16   26 -->
+<line x1="741.47" y1="694.54" x2="234.64" y2="694.54" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Vertex:     8 -->
+<ellipse cx="1079.36" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="1084.53" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Aleman Gonzalez, Miguel</text>
+<!-- Vertex:     9 -->
+<ellipse cx="910.41" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="915.59" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Jara, Heriberto</text>
+<!-- Vertex:    16 -->
+<ellipse cx="741.47" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="746.65" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Sanchez Taboada, Rodolfo</text>
+<!-- Vertex:    21 -->
+<ellipse cx="572.53" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="577.70" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Gonzalez Blanco, Salomon</text>
+<!-- Vertex:    22 -->
+<ellipse cx="403.59" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="408.76" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Serra Rojas, Andres</text>
+<!-- Vertex:    26 -->
+<ellipse cx="234.64" cy="694.54" rx="22.36" ry="22.36" style="fill:rgb(255,216,242);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="239.82" y="713.86" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Echeverria Alvarez, Luis</text>
+</g>
+
+<g id="c5on" visibility="visible">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:0.50" rx="5" ry="5" cx="6" cy="75"/> 
+</g>
+<g id="c5off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:0.50" rx="5.50" ry="5.50" cx="6" cy="75"/>
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(255,255,255);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="75"/>
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:0.50" rx="3.00" ry="3.00" cx="6" cy="75"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c5off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c5on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="79"><tspan>6</tspan></text>
+
+<g id="c5">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c5on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c5off.click"/>
+<!-- Edge:     1    3 -->
+<line x1="1100.47" y1="640.42" x2="952.65" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     1    4 -->
+<line x1="1100.47" y1="640.42" x2="804.83" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     1    5 -->
+<line x1="1100.47" y1="640.42" x2="657.00" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:     3    4 -->
+<line x1="952.65" y1="640.42" x2="804.83" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    32   33 -->
+<line x1="361.35" y1="640.42" x2="213.53" y2="640.42" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Vertex:     1 -->
+<ellipse cx="1100.47" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="1105.65" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Madero, Francisco</text>
+<!-- Vertex:     3 -->
+<ellipse cx="952.65" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="957.83" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Obregon, Alvaro</text>
+<!-- Vertex:     4 -->
+<ellipse cx="804.83" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="810.00" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Calles, Plutarco E.</text>
+<!-- Vertex:     5 -->
+<ellipse cx="657.00" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Aguilar, Candido</text>
+<!-- Vertex:    27 -->
+<ellipse cx="509.17" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="514.35" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Bustamante, Eduardo</text>
+<!-- Vertex:    32 -->
+<ellipse cx="361.35" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="366.53" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">De la Madrid, Miguel</text>
+<!-- Vertex:    33 -->
+<ellipse cx="213.53" cy="640.42" rx="24.49" ry="24.49" style="fill:rgb(255,255,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="218.70" y="659.74" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Salinas de Gortari, Carlos</text>
+</g>
+
+<g id="c6on" visibility="visible">
+  <ellipse style="fill:rgb(255,99,33);stroke:rgb(255,99,33);stroke-width:0.00" rx="5" ry="5" cx="6" cy="88"/> 
+</g>
+<g id="c6off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(255,99,33);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="88"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c6off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c6on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="92"><tspan>7</tspan></text>
+
+<g id="c6">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c6on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c6off.click"/>
+<!-- Edge:    11   25 -->
+<line x1="1011.78" y1="586.30" x2="302.22" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Edge:    14   15 -->
+<line x1="775.26" y1="586.30" x2="538.74" y2="586.30" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Vertex:    11 -->
+<ellipse cx="1011.78" cy="586.30" rx="26.46" ry="26.46" style="fill:rgb(255,99,33);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="1016.96" y="605.62" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Avila Camacho, Manuel</text>
+<!-- Vertex:    14 -->
+<ellipse cx="775.26" cy="586.30" rx="26.46" ry="26.46" style="fill:rgb(255,99,33);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="780.44" y="605.62" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Beteta, Ramon</text>
+<!-- Vertex:    15 -->
+<ellipse cx="538.74" cy="586.30" rx="26.46" ry="26.46" style="fill:rgb(255,99,33);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="543.92" y="605.62" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Beteta, Mario Ramon</text>
+<!-- Vertex:    25 -->
+<ellipse cx="302.22" cy="586.30" rx="26.46" ry="26.46" style="fill:rgb(255,99,33);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="307.40" y="605.62" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Diaz Ordaz, Gustavo</text>
+</g>
+
+<g id="c7on" visibility="visible">
+  <ellipse style="fill:rgb(140,35,255);stroke:rgb(140,35,255);stroke-width:0.00" rx="5" ry="5" cx="6" cy="101"/> 
+</g>
+<g id="c7off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(140,35,255);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="101"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c7off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c7on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="105"><tspan>8</tspan></text>
+
+<g id="c7">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c7on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c7off.click"/>
+<!-- Edge:     2    7 -->
+<line x1="952.65" y1="532.18" x2="657.00" y2="532.18" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Vertex:     2 -->
+<ellipse cx="952.65" cy="532.18" rx="28.28" ry="28.28" style="fill:rgb(140,35,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="957.83" y="551.50" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Carranza, Venustiano</text>
+<!-- Vertex:     7 -->
+<ellipse cx="657.00" cy="532.18" rx="28.28" ry="28.28" style="fill:rgb(140,35,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="551.50" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Portes Gil, Emilio</text>
+<!-- Vertex:    28 -->
+<ellipse cx="361.35" cy="532.18" rx="28.28" ry="28.28" style="fill:rgb(140,35,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="366.53" y="551.50" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Ortiz Mena, Antonio</text>
+</g>
+
+<g id="c8on" visibility="visible">
+  <ellipse style="fill:rgb(30,249,163);stroke:rgb(30,249,163);stroke-width:0.00" rx="5" ry="5" cx="6" cy="114"/> 
+</g>
+<g id="c8off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(30,249,163);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="114"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c8off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c8on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="118"><tspan>10</tspan></text>
+
+<g id="c8">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c8on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c8off.click"/>
+<!-- Edge:    19   31 -->
+<line x1="854.10" y1="423.94" x2="459.90" y2="423.94" style="stroke-width:2.00;stroke:rgb(204,204,255)"/>
+<!-- Vertex:    19 -->
+<ellipse cx="854.10" cy="423.94" rx="31.62" ry="31.62" style="fill:rgb(30,249,163);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="859.28" y="443.26" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Lopez Mateos, Adolfo</text>
+<!-- Vertex:    31 -->
+<ellipse cx="459.90" cy="423.94" rx="31.62" ry="31.62" style="fill:rgb(30,249,163);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="465.08" y="443.26" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Salinas Lozano, Raul</text>
+</g>
+
+<g id="c9on" visibility="visible">
+  <ellipse style="fill:rgb(0,153,0);stroke:rgb(0,153,0);stroke-width:0.00" rx="5" ry="5" cx="6" cy="127"/> 
+</g>
+<g id="c9off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,153,0);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="127"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c9off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c9on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="131"><tspan>11</tspan></text>
+
+<g id="c9">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c9on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c9off.click"/>
+<!-- Vertex:    23 -->
+<ellipse cx="657.00" cy="369.82" rx="33.17" ry="33.17" style="fill:rgb(0,153,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="389.14" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Carrillo Flores, Antonio</text>
+</g>
+
+<g id="c10on" visibility="visible">
+  <ellipse style="fill:rgb(127,127,127);stroke:rgb(127,127,127);stroke-width:0.00" rx="5" ry="5" cx="6" cy="140"/> 
+</g>
+<g id="c10off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(127,127,127);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="140"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c10off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c10on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="144"><tspan>12</tspan></text>
+
+<g id="c10">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c10on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c10off.click"/>
+<!-- Vertex:    10 -->
+<ellipse cx="854.10" cy="315.70" rx="34.64" ry="34.64" style="fill:rgb(127,127,127);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="859.28" y="335.02" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Cardenas, Lazaro</text>
+<!-- Vertex:    20 -->
+<ellipse cx="459.90" cy="315.70" rx="34.64" ry="34.64" style="fill:rgb(127,127,127);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="465.08" y="335.02" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Margain, Hugo B.</text>
+</g>
+
+<g id="c11on" visibility="visible">
+  <ellipse style="fill:rgb(0,0,0);stroke:rgb(0,0,0);stroke-width:0.00" rx="5" ry="5" cx="6" cy="153"/> 
+</g>
+<g id="c11off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(0,0,0);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="153"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c11off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c11on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="157"><tspan>13</tspan></text>
+
+<g id="c11">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c11on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c11off.click"/>
+<!-- Vertex:    18 -->
+<ellipse cx="657.00" cy="261.58" rx="36.06" ry="36.06" style="fill:rgb(0,0,0);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="280.90" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Ruiz Cortines, Adolfo</text>
+</g>
+
+<g id="c12on" visibility="visible">
+  <ellipse style="fill:rgb(255,0,255);stroke:rgb(255,0,255);stroke-width:0.00" rx="5" ry="5" cx="6" cy="166"/> 
+</g>
+<g id="c12off" visibility="hidden">
+  <ellipse style="fill:rgb(255,255,255);stroke:rgb(255,0,255);stroke-width:2.50" rx="4.25" ry="4.25" cx="6" cy="166"/>
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c12off.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c12on.click"/>
+</g>
+<text style="font-size:10px;font-style:normal;" xml:space="preserve" x="16" y="170"><tspan>17</tspan></text>
+
+<g id="c12">
+  <set attributeName="visibility" attributeType="CSS" to="hidden" begin="c12on.click"/>
+  <set attributeName="visibility" attributeType="CSS" to="visible" begin="c12off.click"/>
+<!-- Vertex:    12 -->
+<ellipse cx="657.00" cy="45.10" rx="41.23" ry="41.23" style="fill:rgb(255,0,255);stroke:rgb(127,0,255);stroke-width:0.50;"/>
+<text x="662.18" y="64.42" style="font-family:Arial;font-weight: bold;font-size:12px;fill:rgb(0,0,0)">Aleman Valdes, Miguel</text>
+</g>
+</g>         <!-- Layer Network -->
+</svg>

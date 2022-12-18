@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Title: 1. C:\Users\alex\Documents\pajek\task1\1.net (13) -->
+<!-- Creator: Pajek 5.16: http://mrvar.fdv.uni-lj.si/pajek -->
+<!-- CreationDate: 12-15-2022, 18:11:34 -->
+<svg xml:space="preserve" viewBox="0 0 976 1088" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<title>1. C:\Users\alex\Documents\pajek\task1\1.net (13)</title>
+<g inkscape:groupmode="layer" id="PajekSig" inkscape:label="PajekSignature">
+<g transform="translate(3 1070)">
+<g transform="scale(0.1)">
+<g transform="matrix(1 0 0 -1 0 96)">
+<path d="M   7.67  49.98 L  31.76  72.76 L  46.91  78.63
+         L  57.23  80.49 M  72.86  65.23 L  65.73  83.25
+         L  57.06  75.49 L  56.75  68.65 M  76.27  68.03
+         L  75.65  84.50 L  93.92  91.02 L 107.24  74.87
+         M  80.29  67.72 L  89.28  84.81 L 104.77  81.70
+         L 116.23  73.31 L 121.18  59.33 M  56.75  81.08
+         L  71.31  64.30"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  86.18  70.21 L  91.45  73.00 L  95.78  69.58
+         M  91.14  60.88 L  96.09  62.75 L  98.26  59.33"
+         style="fill:none; stroke:saddlebrown; stroke-width:1.5;"/>
+<path d="M  81.07  49.08 L  87.81  49.08 L  93.30  54.38
+         L  93.30  60.88 L  93.30  67.39 L  87.81  72.69
+         L  81.07  72.69 L  74.33  72.69 L  68.83  67.39
+         L  68.83  60.88 L  68.83  54.38 L  74.33  49.08
+         L  81.07  49.08 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;"/>
+<path d="M  54.63  37.53 L  68.53  43.56 L  75.39  55.85
+         L  69.90  65.35 L  64.41  72.86 L  48.60  74.06
+         L  34.71  68.04 L  20.81  55.02 L  15.95  40.72
+         L  17.44  33.22 L  24.92  28.72 L  40.73  30.51
+         L  54.63  37.53 z"
+         style="fill:maroon; stroke:saddlebrown; stroke-width:1;" />
+<path d="M  77.82  50.63 L 103.84  59.33 L 131.10  43.80
+         L 139.46  27.95 L 139.15  15.83 M  35.99   5.27
+         L  47.15  32.92 L  61.71  50.01 L  70.07  46.90
+         L  82.77  45.04 L  83.39  27.02 L  65.42  12.11
+         M  68.52  50.63 L  91.14  49.39 L 103.53  43.17
+         L 117.16  22.67 L 115.30   8.38"
+         style="fill:none; stroke:saddlebrown; stroke-width:5;"/>
+<path d="M  41.57  54.98 L  60.16  64.61 M  52.41  66.17
+         L  57.99  57.47"
+         style="fill:none; stroke:white; stroke-width:5;"/>
+</g>
+</g>
+<animateMotion dur="20s" path="M3 0 L958 0" begin="120s" fill="freeze"/>
+</g>
+<g transform="translate(3 1070)">
+<g transform="scale(0.1)">
+<text x="5" y="140" style="font-family:Brush Script MT;font-size:75px;fill:green;">Pajek</text>
+</g>
+<animateMotion dur="0.1s" path="M3 0 L958 0" begin="120s" fill="freeze"/>
+</g>
+</g>      <!-- Layer Signature -->
+
+<g inkscape:groupmode="layer" id="PajekNet" inkscape:label="PajekNetwork">
+
+<!-- Arc:     3    8 -->
+<g transform="translate(516.29 273.32)">
+<g transform="rotate(519.05)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="619.42" y1="233.83" x2="516.29" y2="273.32" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:     3   11 -->
+<g transform="translate(477.83 543.72)">
+<g transform="rotate(474.56)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,58,33)"/>
+</g></g>
+<line x1="619.42" y1="233.83" x2="477.83" y2="543.72" style="stroke-dasharray:5;stroke-width:2.00;stroke:rgb(255,58,33)"/>
+<!-- Arc:     6    2 -->
+<g transform="translate(117.56 752.41)">
+<g transform="rotate(255.99)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="187.71" y1="1033.60" x2="117.56" y2="752.41" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:     6    9 -->
+<g transform="translate(376.91 964.62)">
+<g transform="rotate(339.97)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="187.71" y1="1033.60" x2="376.91" y2="964.62" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:     7   11 -->
+<g transform="translate(489.05 558.32)">
+<g transform="rotate(507.38)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,58,33)"/>
+</g></g>
+<line x1="709.05" y1="417.54" x2="489.05" y2="558.32" style="stroke-dasharray:5;stroke-width:2.00;stroke:rgb(255,58,33)"/>
+<!-- Arc:     7   13 -->
+<g transform="translate(897.10 450.30)">
+<g transform="rotate(369.88)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,58,33)"/>
+</g></g>
+<line x1="709.05" y1="417.54" x2="897.10" y2="450.30" style="stroke-dasharray:5;stroke-width:2.00;stroke:rgb(255,58,33)"/>
+<!-- Arc:     8    5 -->
+<g transform="translate(290.90 440.79)">
+<g transform="rotate(501.54)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="488.25" y1="284.03" x2="290.90" y2="440.79" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:     9   11 -->
+<g transform="translate(457.19 621.14)">
+<g transform="rotate(277.96)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,58,33)"/>
+</g></g>
+<line x1="410.85" y1="952.32" x2="457.19" y2="621.14" style="stroke-dasharray:5;stroke-width:2.00;stroke:rgb(255,58,33)"/>
+<!-- Arc:    10    5 -->
+<g transform="translate(275.82 422.84)">
+<g transform="rotate(463.38)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="325.48" y1="214.12" x2="275.82" y2="422.84" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:    10   11 -->
+<g transform="translate(451.18 542.10)">
+<g transform="rotate(429.03)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,58,33)"/>
+</g></g>
+<line x1="325.48" y1="214.12" x2="451.18" y2="542.10" style="stroke-dasharray:5;stroke-width:2.00;stroke:rgb(255,58,33)"/>
+<!-- Arc:    11    5 -->
+<g transform="translate(302.93 480.53)">
+<g transform="rotate(210.28)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="463.73" y1="574.43" x2="302.93" y2="480.53" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Arc:    11   12 -->
+<g transform="translate(605.21 624.50)">
+<g transform="rotate(379.49)">
+<path d="M 0 0 L -3.00 7.50 L 15.00 0 L -3.00 -7.50 z" style="fill:rgb(255,181,40)"/>
+</g></g>
+<line x1="463.73" y1="574.43" x2="605.21" y2="624.50" style="stroke-width:2.00;stroke:rgb(255,181,40)"/>
+<!-- Edge:     1    2 -->
+<line x1="48.80" y1="408.22" x2="106.27" y2="706.02" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     1    5 -->
+<line x1="48.80" y1="408.22" x2="267.15" y2="459.47" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     2    5 -->
+<line x1="106.27" y1="706.02" x2="267.15" y2="459.47" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     3    7 -->
+<line x1="619.42" y1="233.83" x2="709.05" y2="417.54" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     3    4 -->
+<line x1="619.42" y1="233.83" x2="650.02" y2="54.40" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     3   12 -->
+<line x1="619.42" y1="233.83" x2="633.39" y2="634.82" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     4    7 -->
+<line x1="650.02" y1="54.40" x2="709.05" y2="417.54" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     4    8 -->
+<line x1="650.02" y1="54.40" x2="488.25" y2="284.03" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     7    8 -->
+<line x1="709.05" y1="417.54" x2="488.25" y2="284.03" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     7   12 -->
+<line x1="709.05" y1="417.54" x2="633.39" y2="634.82" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     8   10 -->
+<line x1="488.25" y1="284.03" x2="325.48" y2="214.12" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+<!-- Edge:     8   12 -->
+<line x1="488.25" y1="284.03" x2="633.39" y2="634.82" style="stroke-width:2.00;stroke:rgb(150,0,168)"/>
+
+<!-- Vertex:     1 -->
+<g transform="translate(48.80 408.22)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="48.80" y="412.55" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">5 WE</text>
+<!-- Vertex:     2 -->
+<g transform="translate(106.27 706.02)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="106.27" y="710.35" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">5 HL</text>
+<!-- Vertex:     3 -->
+<g transform="translate(619.42 233.83)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="619.42" y="238.16" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">5 JA</text>
+<!-- Vertex:     4 -->
+<g transform="translate(650.02 54.40)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="650.02" y="58.73" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">4 JR</text>
+<!-- Vertex:     5 -->
+<g transform="translate(267.15 459.47)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="267.15" y="463.80" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">6 CA</text>
+<!-- Vertex:     6 -->
+<g transform="translate(187.71 1033.60)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="187.71" y="1037.93" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">3 CC</text>
+<!-- Vertex:     7 -->
+<g transform="translate(709.05 417.54)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="709.05" y="421.87" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">3 CW</text>
+<!-- Vertex:     8 -->
+<g transform="translate(488.25 284.03)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="488.25" y="288.36" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">4 MS</text>
+<!-- Vertex:     9 -->
+<g transform="translate(410.85 952.32)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="410.85" y="956.65" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">4 RN</text>
+<!-- Vertex:    10 -->
+<g transform="translate(325.48 214.12)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="325.48" y="218.46" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">4 LN</text>
+<!-- Vertex:    11 -->
+<g transform="translate(463.73 574.43)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="463.73" y="578.76" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">5 RB</text>
+<!-- Vertex:    12 -->
+<g transform="translate(633.39 634.82)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="633.39" y="639.16" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">4 JR</text>
+<!-- Vertex:    13 -->
+<g transform="translate(927.20 455.54)">
+<path d="M 30.63 30.63 L 0 -30.63 L -30.63 30.63 z" style="fill:rgb(255,255,153);stroke:rgb(102,0,0);stroke-width:0.50;"/>
+</g>
+<text x="927.20" y="459.87" style="font-family:Arial;font-weight: bold;font-size:13px;fill:rgb(89,89,89);text-anchor:middle;">6 DP</text>
+</g>         <!-- Layer Network -->
+</svg>

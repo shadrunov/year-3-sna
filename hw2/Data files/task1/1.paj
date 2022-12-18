@@ -1,0 +1,42 @@
+*Network C:\Users\alex\Documents\pajek\task1\1.net
+*Vertices 13
+  1 "5 WE"                                   0.1613    0.1538    0.5000
+  2 "5 HL"                                   0.2985    0.3464    0.5000
+  3 "5 JA"                                   0.3548    0.4231    0.5000
+  4 "4 JR"                                   0.7453    0.8940    0.5000
+  5 "6 CA"                                   0.6075    0.4210    0.5000
+  6 "3 CC"                                   0.6441    0.3494    0.5000
+  7 "3 CW"                                   0.8387    0.1538    0.5000
+  8 "4 MS"                                   0.4624    0.7056    0.5000
+  9 "4 RN"                                   0.1942    0.8263    0.5000
+ 10 "4 LN"                                   0.2258    0.8846    0.5000
+ 11 "5 RB"                                   0.5000    0.9524    0.5000
+ 12 "4 JR"                                   0.4927    0.4406    0.5000
+ 13 "6 DP"                                   0.8215    0.8184    0.5000
+*Arcs
+  3   8 1 c Dandelion
+  3  11 -1 c RedOrange
+  6   2 1 c Dandelion
+  6   9 1 c Dandelion
+  7  11 -1 c RedOrange
+  7  13 -1 c RedOrange
+  8   5 1 c Dandelion
+  9  11 -1 c RedOrange
+ 10   5 1 c Dandelion
+ 10  11 -1 c RedOrange
+ 11   5 1 c Dandelion
+ 11  12 1 c Dandelion
+*Edges
+  1   2 1 c RedViolet
+  1   5 1 c RedViolet
+  2   5 1 c RedViolet
+  3   7 1 c RedViolet
+  3   4 1 c RedViolet
+  3  12 1 c RedViolet
+  4   7 1 c RedViolet
+  4   8 1 c RedViolet
+  7   8 1 c RedViolet
+  7  12 1 c RedViolet
+  8  10 1 c RedViolet
+  8  12 1 c RedViolet
+

@@ -1,0 +1,1799 @@
+*Network mexican_power.net
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 1
+  1   3 1
+  1   4 1
+  1   5 1
+  1   6 1
+  1   7 1
+  2   3 1
+  2   4 1
+  2   5 1
+  2   6 1
+  2   7 1
+  2   8 1
+  2  18 1
+  3   4 1
+  3   7 1
+  3   8 1
+  3  10 1
+  4   7 1
+  4  10 1
+  4  14 1
+  5   8 1
+  5   9 1
+  5  10 1
+  5  12 1
+  6  18 1
+  7  10 1
+  7  11 1
+  7  22 1
+  7  23 1
+  8   9 1
+  8  12 1
+  9  10 1
+  9  11 1
+  9  18 1
+ 10  11 1
+ 10  12 1
+ 10  13 1
+ 10  14 1
+ 10  16 1
+ 10  31 1
+ 11  12 1
+ 11  18 1
+ 11  22 1
+ 11  25 1
+ 12  14 1
+ 12  16 1
+ 12  17 1
+ 12  18 1
+ 12  19 1
+ 12  20 1
+ 12  22 1
+ 12  23 1
+ 12  24 1
+ 12  25 1
+ 12  27 1
+ 12  28 1
+ 12  34 1
+ 13  14 1
+ 13  15 1
+ 14  15 1
+ 14  20 1
+ 14  32 1
+ 15  20 1
+ 15  27 1
+ 15  29 1
+ 15  32 1
+ 15  33 1
+ 16  18 1
+ 16  19 1
+ 16  26 1
+ 17  18 1
+ 17  23 1
+ 18  19 1
+ 18  21 1
+ 18  23 1
+ 18  24 1
+ 18  28 1
+ 18  30 1
+ 19  21 1
+ 19  25 1
+ 19  26 1
+ 19  27 1
+ 19  28 1
+ 19  30 1
+ 19  31 1
+ 20  21 1
+ 20  23 1
+ 20  25 1
+ 20  26 1
+ 20  28 1
+ 20  29 1
+ 20  31 1
+ 20  32 1
+ 20  33 1
+ 21  23 1
+ 21  31 1
+ 22  23 1
+ 22  27 1
+ 23  25 1
+ 23  27 1
+ 23  28 1
+ 23  31 1
+ 24  30 1
+ 25  26 1
+ 25  28 1
+ 26  29 1
+ 27  31 1
+ 28  31 1
+ 28  33 1
+ 29  32 1
+ 30  31 1
+ 31  32 1
+ 31  33 1
+ 32  33 1
+ 33  34 1
+ 10  35 1
+ 34  35 1
+
+*Network Subnetwork of N1 induced by C7 [5]
+*Vertices 25
+  1 "Madero, Francisco"                      0.8375    0.7100    0.5000
+  2 "Carranza, Venustiano"                   0.7250    0.5900    0.5000
+  3 "Obregon, Alvaro"                        0.7250    0.7100    0.5000
+  4 "Calles, Plutarco E."                    0.6125    0.7100    0.5000
+  5 "Aguilar, Candido"                       0.5000    0.7100    0.5000
+  6 "Portes Gil, Emilio"                     0.5000    0.5900    0.5000
+  7 "Aleman Gonzalez, Miguel"                0.8214    0.7700    0.5000
+  8 "Jara, Heriberto"                        0.6929    0.7700    0.5000
+  9 "Cardenas, Lazaro"                       0.6500    0.3500    0.5000
+ 10 "Avila Camacho, Manuel"                  0.7700    0.6500    0.5000
+ 11 "Aleman Valdes, Miguel"                  0.5000    0.0500    0.5000
+ 12 "Beteta, Ramon"                          0.5900    0.6500    0.5000
+ 13 "Beteta, Mario Ramon"                    0.4100    0.6500    0.5000
+ 14 "Ruiz Cortines, Adolfo"                  0.5000    0.2900    0.5000
+ 15 "Lopez Mateos, Adolfo"                   0.6500    0.4700    0.5000
+ 16 "Margain, Hugo B."                       0.3500    0.3500    0.5000
+ 17 "Gonzalez Blanco, Salomon"               0.4357    0.7700    0.5000
+ 18 "Serra Rojas, Andres"                    0.3071    0.7700    0.5000
+ 19 "Carrillo Flores, Antonio"               0.5000    0.4100    0.5000
+ 20 "Diaz Ordaz, Gustavo"                    0.2300    0.6500    0.5000
+ 21 "Bustamante, Eduardo"                    0.3875    0.7100    0.5000
+ 22 "Ortiz Mena, Antonio"                    0.2750    0.5900    0.5000
+ 23 "Salinas Lozano, Raul"                   0.3500    0.4700    0.5000
+ 24 "De la Madrid, Miguel"                   0.2750    0.7100    0.5000
+ 25 "Salinas de Gortari, Carlos"             0.1625    0.7100    0.5000
+*Edges
+  1   2 1
+  1   3 1
+  1   4 1
+  1   5 1
+  1   6 1
+  2   3 1
+  2   4 1
+  2   5 1
+  2   6 1
+  2   7 1
+  2  14 1
+  3   4 1
+  3   6 1
+  3   7 1
+  3   9 1
+  4   6 1
+  4   9 1
+  4  12 1
+  5   7 1
+  5   8 1
+  5   9 1
+  5  11 1
+  6   9 1
+  6  10 1
+  6  18 1
+  6  19 1
+  7   8 1
+  7  11 1
+  8   9 1
+  8  10 1
+  8  14 1
+  9  10 1
+  9  11 1
+  9  12 1
+  9  23 1
+ 10  11 1
+ 10  14 1
+ 10  18 1
+ 10  20 1
+ 11  12 1
+ 11  14 1
+ 11  15 1
+ 11  16 1
+ 11  18 1
+ 11  19 1
+ 11  20 1
+ 11  21 1
+ 11  22 1
+ 12  13 1
+ 12  16 1
+ 12  24 1
+ 13  16 1
+ 13  21 1
+ 13  24 1
+ 13  25 1
+ 14  15 1
+ 14  17 1
+ 14  19 1
+ 14  22 1
+ 15  17 1
+ 15  20 1
+ 15  21 1
+ 15  22 1
+ 15  23 1
+ 16  17 1
+ 16  19 1
+ 16  20 1
+ 16  22 1
+ 16  23 1
+ 16  24 1
+ 16  25 1
+ 17  19 1
+ 17  23 1
+ 18  19 1
+ 18  21 1
+ 19  20 1
+ 19  21 1
+ 19  22 1
+ 19  23 1
+ 20  22 1
+ 21  23 1
+ 22  23 1
+ 22  25 1
+ 23  24 1
+ 23  25 1
+ 24  25 1
+
+*Network Undirected 3-rings count of N1
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 5
+  1   3 3
+  1   4 3
+  1   5 1
+  1   6 1
+  1   7 3
+  2   3 4
+  2   4 3
+  2   5 2
+  2   6 2
+  2   7 3
+  2   8 2
+  2  18 1
+  3   4 4
+  3   7 4
+  3   8 1
+  3  10 2
+  4   7 4
+  4  10 3
+  4  14 1
+  5   8 3
+  5   9 2
+  5  10 2
+  5  12 2
+  6  18 1
+  7  10 3
+  7  11 2
+  7  22 2
+  7  23 1
+  8   9 1
+  8  12 1
+  9  10 2
+  9  11 2
+  9  18 1
+ 10  11 3
+ 10  12 4
+ 10  13 1
+ 10  14 3
+ 10  16 1
+ 10  31 0
+ 11  12 4
+ 11  18 2
+ 11  22 2
+ 11  25 1
+ 12  14 2
+ 12  16 3
+ 12  17 2
+ 12  18 7
+ 12  19 5
+ 12  20 4
+ 12  22 3
+ 12  23 7
+ 12  24 1
+ 12  25 5
+ 12  27 3
+ 12  28 5
+ 12  34 0
+ 13  14 2
+ 13  15 1
+ 14  15 3
+ 14  20 3
+ 14  32 2
+ 15  20 4
+ 15  27 0
+ 15  29 2
+ 15  32 4
+ 15  33 2
+ 16  18 2
+ 16  19 3
+ 16  26 1
+ 17  18 2
+ 17  23 2
+ 18  19 5
+ 18  21 2
+ 18  23 4
+ 18  24 2
+ 18  28 3
+ 18  30 2
+ 19  21 2
+ 19  25 3
+ 19  26 2
+ 19  27 2
+ 19  28 4
+ 19  30 2
+ 19  31 4
+ 20  21 2
+ 20  23 5
+ 20  25 4
+ 20  26 2
+ 20  28 5
+ 20  29 3
+ 20  31 5
+ 20  32 5
+ 20  33 4
+ 21  23 3
+ 21  31 3
+ 22  23 3
+ 22  27 2
+ 23  25 3
+ 23  27 3
+ 23  28 5
+ 23  31 4
+ 24  30 1
+ 25  26 2
+ 25  28 4
+ 26  29 1
+ 27  31 2
+ 28  31 4
+ 28  33 2
+ 29  32 2
+ 30  31 1
+ 31  32 2
+ 31  33 3
+ 32  33 3
+ 33  34 0
+ 10  35 0
+ 34  35 0
+
+*Network Islands [Line Weights] in N3 [2,18]
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   7 4
+  4   7 4
+  5   8 3
+ 10  12 4
+ 11  12 4
+ 12  18 7
+ 12  19 5
+ 12  20 4
+ 12  23 7
+ 12  25 5
+ 12  28 5
+ 15  20 4
+ 15  32 4
+ 18  19 5
+ 18  23 4
+ 19  28 4
+ 19  31 4
+ 20  23 5
+ 20  25 4
+ 20  28 5
+ 20  31 5
+ 20  32 5
+ 20  33 4
+ 23  28 5
+ 23  31 4
+ 25  28 4
+ 28  31 4
+
+*Network Extracting N4 according to C10 [1-*]
+*Vertices 20
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  7 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  8 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+  9 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 10 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 11 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 12 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 13 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 14 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 15 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 16 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 17 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 18 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 19 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 20 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   6 4
+  4   6 4
+  5   7 3
+  8  10 4
+  9  10 4
+ 10  12 7
+ 10  13 5
+ 10  14 4
+ 10  15 7
+ 10  16 5
+ 10  17 5
+ 11  14 4
+ 11  19 4
+ 12  13 5
+ 12  15 4
+ 13  17 4
+ 13  18 4
+ 14  15 5
+ 14  16 4
+ 14  17 5
+ 14  18 5
+ 14  19 5
+ 14  20 4
+ 15  17 5
+ 15  18 4
+ 16  17 4
+ 17  18 4
+
+*Network z-coordinate from V9 in N5
+*Vertices 20
+  1 "Madero, Francisco"                      0.6390    0.0546   11.0000
+  2 "Carranza, Venustiano"                   0.9616    0.1118   13.0000
+  3 "Obregon, Alvaro"                        1.0573    0.2289   20.0000
+  4 "Calles, Plutarco E."                    1.1797    0.2520   24.0000
+  5 "Aguilar, Candido"                       1.1001    0.4890   18.0000
+  6 "Portes Gil, Emilio"                     0.8825    0.4473   28.0000
+  7 "Aleman Gonzalez, Miguel"                0.4741    0.8959   27.0000
+  8 "Cardenas, Lazaro"                       0.4357    0.5858   34.0000
+  9 "Avila Camacho, Manuel"                  0.6310    0.6387   40.0000
+ 10 "Aleman Valdes, Miguel"                  0.5969    0.4358   46.0000
+ 11 "Beteta, Mario Ramon"                    0.1818    0.0830   70.0000
+ 12 "Ruiz Cortines, Adolfo"                  0.5814    0.5385   52.0000
+ 13 "Lopez Mateos, Adolfo"                   0.5974    0.3951   58.0000
+ 14 "Margain, Hugo B."                       0.2923    0.2518   65.0000
+ 15 "Carrillo Flores, Antonio"               0.4947    0.3525   52.0000
+ 16 "Diaz Ordaz, Gustavo"                    0.2026    0.4081   65.0000
+ 17 "Ortiz Mena, Antonio"                    0.3844    0.3387   52.0000
+ 18 "Salinas Lozano, Raul"                   0.5172    0.2029   56.0000
+ 19 "De la Madrid, Miguel"                   0.3322    0.0439   82.0000
+ 20 "Salinas de Gortari, Carlos"             0.0587    0.2438   88.0000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   6 4
+  4   6 4
+  5   7 3
+  8  10 4
+  9  10 4
+ 10  12 7
+ 10  13 5
+ 10  14 4
+ 10  15 7
+ 10  16 5
+ 10  17 5
+ 11  14 4
+ 11  19 4
+ 12  13 5
+ 12  15 4
+ 13  17 4
+ 13  18 4
+ 14  15 5
+ 14  16 4
+ 14  17 5
+ 14  18 5
+ 14  19 5
+ 14  20 4
+ 15  17 5
+ 15  18 4
+ 16  17 4
+ 17  18 4
+
+*Network Islands [Line Weights] in N3 [2,10]
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   7 4
+  4   7 4
+  5   8 3
+ 12  18 7
+ 12  19 5
+ 12  23 7
+ 12  25 5
+ 12  28 5
+ 18  19 5
+ 20  23 5
+ 20  28 5
+ 20  31 5
+ 20  32 5
+ 23  28 5
+
+*Network Extracting N7 according to C15 [1-*]
+*Vertices 16
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  7 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  8 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+  9 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 10 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 11 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 12 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 13 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 14 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 15 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 16 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   6 4
+  4   6 4
+  5   7 3
+  8   9 7
+  8  10 5
+  8  12 7
+  8  13 5
+  8  14 5
+  9  10 5
+ 11  12 5
+ 11  14 5
+ 11  15 5
+ 11  16 5
+ 12  14 5
+
+*Network Removed lines with values lower than 3.0000 in N3
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 5
+  1   3 3
+  1   4 3
+  1   7 3
+  2   3 4
+  2   4 3
+  2   7 3
+  3   4 4
+  3   7 4
+  4   7 4
+  4  10 3
+  5   8 3
+  7  10 3
+ 10  11 3
+ 10  12 4
+ 10  14 3
+ 11  12 4
+ 12  16 3
+ 12  18 7
+ 12  19 5
+ 12  20 4
+ 12  22 3
+ 12  23 7
+ 12  25 5
+ 12  27 3
+ 12  28 5
+ 14  15 3
+ 14  20 3
+ 15  20 4
+ 15  32 4
+ 16  19 3
+ 18  19 5
+ 18  23 4
+ 18  28 3
+ 19  25 3
+ 19  28 4
+ 19  31 4
+ 20  23 5
+ 20  25 4
+ 20  28 5
+ 20  29 3
+ 20  31 5
+ 20  32 5
+ 20  33 4
+ 21  23 3
+ 21  31 3
+ 22  23 3
+ 23  25 3
+ 23  27 3
+ 23  28 5
+ 23  31 4
+ 25  28 4
+ 28  31 4
+ 31  33 3
+ 32  33 3
+
+*Network Removed lines with values lower than 4.0000 in N3
+*Vertices 35
+  1 "Madero, Francisco"                      0.6403    0.4798    0.5000
+  2 "Carranza, Venustiano"                   0.6126    0.3892    0.5000
+  3 "Obregon, Alvaro"                        0.6334    0.2999    0.5000
+  4 "Calles, Plutarco E."                    0.6979    0.2338    0.5000
+  5 "Aguilar, Candido"                       0.9001    0.9229    0.5000
+  6 "Trevino, Jacinto B."                    0.7171    0.9451    0.5000
+  7 "Portes Gil, Emilio"                     0.6595    0.1493    0.5000
+  8 "Aleman Gonzalez, Miguel"                0.7279    0.7368    0.5000
+  9 "Jara, Heriberto"                        0.7648    0.8274    0.5000
+ 10 "Cardenas, Lazaro"                       0.1361    0.0453    0.5000
+ 11 "Avila Camacho, Manuel"                  0.0538    0.1714    0.5000
+ 12 "Aleman Valdes, Miguel"                  0.1729    0.2472    0.5000
+ 13 "Beteta, Ignacio"                        0.7171    0.7953    0.5000
+ 14 "Beteta, Ramon"                          0.3420    0.8727    0.5000
+ 15 "Beteta, Mario Ramon"                    0.4397    0.5288    0.5000
+ 16 "Sanchez Taboada, Rodolfo"               0.5257    0.8715    0.5000
+ 17 "Carvajal, Angel"                        0.7379    0.8727    0.5000
+ 18 "Ruiz Cortines, Adolfo"                  0.0842    0.4248    0.5000
+ 19 "Lopez Mateos, Adolfo"                   0.1453    0.5398    0.5000
+ 20 "Margain, Hugo B."                       0.3605    0.3280    0.5000
+ 21 "Gonzalez Blanco, Salomon"               0.9293    0.8813    0.5000
+ 22 "Serra Rojas, Andres"                    0.1437    0.8849    0.5000
+ 23 "Carrillo Flores, Antonio"               0.2414    0.4920    0.5000
+ 24 "Ruiz Galindo, Antonio"                  0.1439    0.8014    0.5000
+ 25 "Diaz Ordaz, Gustavo"                    0.2767    0.1738    0.5000
+ 26 "Echeverria Alvarez, Luis"               0.3378    0.8014    0.5000
+ 27 "Bustamante, Eduardo"                    0.5317    0.8014    0.5000
+ 28 "Ortiz Mena, Antonio"                    0.2613    0.3550    0.5000
+ 29 "Lopez Portillo, Jose"                   0.9194    0.8014    0.5000
+ 30 "Loyo, Gilberto"                         0.1439    0.9512    0.5000
+ 31 "Salinas Lozano, Raul"                   0.3359    0.6230    0.5000
+ 32 "De la Madrid, Miguel"                   0.4612    0.2460    0.5000
+ 33 "Salinas de Gortari, Carlos"             0.3831    0.1399    0.5000
+ 34 "Aleman Velasco, Miguel"                 0.3378    0.9512    0.5000
+ 35 "Cardenas, Cuauhtemoc"                   0.5317    0.9512    0.5000
+*Edges
+  1   2 5
+  2   3 4
+  3   4 4
+  3   7 4
+  4   7 4
+ 10  12 4
+ 11  12 4
+ 12  18 7
+ 12  19 5
+ 12  20 4
+ 12  23 7
+ 12  25 5
+ 12  28 5
+ 15  20 4
+ 15  32 4
+ 18  19 5
+ 18  23 4
+ 19  28 4
+ 19  31 4
+ 20  23 5
+ 20  25 4
+ 20  28 5
+ 20  31 5
+ 20  32 5
+ 20  33 4
+ 23  28 5
+ 23  31 4
+ 25  28 4
+ 28  31 4
+
+*Partition mexican_year.clu
+*Vertices 35
+11
+13
+20
+24
+18
+10
+28
+27
+41
+34
+40
+46
+40
+45
+70
+46
+51
+52
+58
+65
+53
+46
+52
+46
+65
+70
+46
+52
+76
+46
+56
+82
+88
+91
+76
+
+*Partition mexican_military.clu
+*Vertices 35
+2
+1
+1
+1
+1
+1
+2
+1
+1
+1
+1
+1
+1
+2
+2
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+*Partition Weak Components of N1 [>=1]
+*Vertices 35
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+*Partition All Degree Partition of N1
+*Vertices 35
+6
+8
+6
+6
+6
+3
+8
+5
+5
+12
+7
+17
+3
+7
+7
+5
+3
+13
+10
+12
+5
+5
+11
+3
+7
+5
+6
+8
+4
+4
+10
+6
+6
+3
+2
+
+*Partition Number of vertices in clusters of C4
+*Vertices 17
+0
+1
+5
+2
+6
+7
+4
+3
+0
+2
+1
+2
+1
+0
+0
+0
+1
+
+*Partition All core partition of N1
+*Vertices 35
+5
+5
+5
+5
+5
+3
+5
+5
+5
+5
+5
+5
+3
+5
+5
+4
+3
+5
+5
+5
+5
+5
+5
+3
+5
+4
+5
+5
+4
+3
+5
+5
+5
+2
+2
+
+*Partition All core partition of N1
+*Vertices 35
+5
+5
+5
+5
+5
+3
+5
+5
+5
+5
+5
+5
+3
+5
+5
+4
+3
+5
+5
+5
+5
+5
+5
+3
+5
+4
+5
+5
+4
+3
+5
+5
+5
+2
+2
+
+*Partition Cluster=5
+*Vertices 25
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+
+*Partition Islands [Line Weights] in N3 [2,18]
+*Vertices 35
+3
+3
+3
+3
+1
+0
+3
+1
+0
+2
+2
+2
+0
+0
+2
+0
+0
+2
+2
+2
+0
+0
+2
+0
+2
+0
+0
+2
+0
+0
+2
+2
+2
+0
+0
+
+*Partition All Degree Partition of N4
+*Vertices 35
+1
+2
+3
+2
+1
+0
+2
+1
+0
+1
+1
+8
+0
+0
+2
+0
+0
+3
+4
+8
+0
+0
+5
+0
+3
+0
+0
+6
+0
+0
+4
+2
+1
+0
+0
+
+*Partition Extracting from C10 vertices determined by C10 [1-*]
+*Vertices 20
+1
+2
+3
+2
+1
+2
+1
+1
+1
+8
+2
+3
+4
+8
+5
+3
+6
+4
+2
+1
+
+*Partition Extracting from C1 vertices determined by C9 [1-*]
+*Vertices 20
+11
+13
+20
+24
+18
+28
+27
+34
+40
+46
+70
+52
+58
+65
+52
+65
+52
+56
+82
+88
+
+*Partition Extracting from C2 vertices determined by C9 [1-*]
+*Vertices 20
+2
+1
+1
+1
+1
+2
+1
+1
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+
+*Partition Islands [Line Weights] in N3 [2,10]
+*Vertices 35
+2
+2
+2
+2
+1
+0
+2
+1
+0
+0
+0
+3
+0
+0
+0
+0
+0
+3
+3
+3
+0
+0
+3
+0
+3
+0
+0
+3
+0
+0
+3
+3
+0
+0
+0
+
+*Partition All Degree Partition of N7
+*Vertices 35
+1
+2
+3
+2
+1
+0
+2
+1
+0
+0
+0
+5
+0
+0
+0
+0
+0
+2
+2
+4
+0
+0
+3
+0
+1
+0
+0
+3
+0
+0
+1
+1
+0
+0
+0
+
+*Partition Extracting from C15 vertices determined by C15 [1-*]
+*Vertices 16
+1
+2
+3
+2
+1
+2
+1
+5
+2
+2
+4
+3
+1
+3
+1
+1
+
+*Partition Extracting from C1 vertices determined by C14 [1-*]
+*Vertices 16
+11
+13
+20
+24
+18
+28
+27
+46
+52
+58
+65
+52
+65
+52
+56
+82
+
+*Partition Extracting from C2 vertices determined by C14 [1-*]
+*Vertices 16
+2
+1
+1
+1
+1
+2
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+
+*Partition Strong Components of N1 [>=1]
+*Vertices 35
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+*Vector Betweenness centrality in N1
+*Vertices 35
+0.008185724
+0.030941645
+0.008057601
+0.024889727
+0.020612225
+0.005052627
+0.038858146
+0.009436500
+0.006798974
+0.157001916
+0.020404269
+0.230169442
+0.004704240
+0.058203509
+0.022929436
+0.019836287
+0
+0.131622959
+0.035339501
+0.089586082
+0.004625518
+0.005670854
+0.059836548
+0.002213310
+0.013781268
+0.010974148
+0.017121688
+0.021662151
+0.002705628
+0.004772471
+0.064899507
+0.008560961
+0.015989042
+0.014282776
+0.003178847
+
+*Vector Max in V1 according to C4
+*Vertices 17
+-999999999
+0.003178847
+0.014282776
+0.004772471
+0.019836287
+0.024889727
+0.058203509
+0.038858146
+-999999999
+0.064899507
+0.059836548
+0.157001916
+0.131622959
+-999999999
+-999999999
+-999999999
+0.230169442
+
+*Vector Min in V1 according to C4
+*Vertices 17
+999999999
+0.003178847
+0
+0.002705628
+0.004625518
+0.008057601
+0.013781268
+0.021662151
+999999999
+0.035339501
+0.059836548
+0.089586082
+0.131622959
+999999999
+999999999
+999999999
+0.230169442
+
+*Vector All closeness centrality in N1
+*Vertices 35
+0.404761905
+0.465753425
+0.435897436
+0.459459459
+0.492753623
+0.400000000
+0.492753623
+0.465753425
+0.472222222
+0.586206897
+0.523076923
+0.666666667
+0.414634146
+0.539682540
+0.441558442
+0.507462687
+0.453333333
+0.566666667
+0.531250000
+0.548387097
+0.478873239
+0.478873239
+0.576271186
+0.447368421
+0.500000000
+0.430379747
+0.492753623
+0.523076923
+0.386363636
+0.441558442
+0.548387097
+0.435897436
+0.441558442
+0.441558442
+0.386363636
+
+*Vector All Degree of N1
+*Vertices 35
+6
+8
+6
+6
+6
+3
+8
+5
+5
+12
+7
+17
+3
+7
+7
+5
+3
+13
+10
+12
+5
+5
+11
+3
+7
+5
+6
+8
+4
+4
+10
+6
+6
+3
+2
+
+*Vector Triadic Census of N1
+*Vertices 16
+3435
+0
+2460
+0
+0
+0
+0
+0
+0
+0
+549
+0
+0
+0
+0
+101
+
+*Vector Expected Triadic Census of N1
+*Vertices 16
+1759.443139610
+2583.952058590
+316.236810518
+316.236810518
+316.236810518
+632.473621036
+154.810488831
+154.810488831
+154.810488831
+51.603496277
+18.946471959
+18.946471959
+18.946471959
+37.892943919
+9.275051127
+0.378375517
+
+*Vector Height of Islands [Line Weights] in N3 [2,18]
+*Vertices 35
+4
+4
+4
+4
+3
+0
+4
+3
+0
+4
+4
+4
+0
+0
+4
+0
+0
+4
+4
+4
+0
+0
+4
+0
+4
+0
+0
+4
+0
+0
+4
+4
+4
+0
+0
+
+*Vector Copy of Partition C12
+*Vertices 20
+11
+13
+20
+24
+18
+28
+27
+34
+40
+46
+70
+52
+58
+65
+52
+65
+52
+56
+82
+88
+
+*Vector Height of Islands [Line Weights] in N3 [2,10]
+*Vertices 35
+4
+4
+4
+4
+3
+0
+4
+3
+0
+0
+0
+5
+0
+0
+0
+0
+0
+5
+5
+5
+0
+0
+5
+0
+5
+0
+0
+5
+0
+0
+5
+5
+0
+0
+0
+
+*Vector Copy of Partition C17
+*Vertices 16
+11
+13
+20
+24
+18
+28
+27
+46
+52
+58
+65
+52
+65
+52
+56
+82
+
+*Vector Copy of Partition C1
+*Vertices 35
+11
+13
+20
+24
+18
+10
+28
+27
+41
+34
+40
+46
+40
+45
+70
+46
+51
+52
+58
+65
+53
+46
+52
+46
+65
+70
+46
+52
+76
+46
+56
+82
+88
+91
+76
+
