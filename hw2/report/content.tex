@@ -28,13 +28,13 @@ We may try another layout — \textbf{Kamada-Kawai}. This layout puts important 
 
 
 \section{Task 2}
-In this task, we are to analyse the Mexican polite elite network, which is displayed in the picture below. At first glance, one can notice that the given network is undirected and unweighted. Let us examine the network more closely.
+In this task, we are to analyse the Mexican political elite network, which is displayed in the picture below. At first glance, one can notice that the given network is undirected and unweighted. Let us examine the network more closely.
 
-\image{image29.png}{Mexican polite elite network}{}
+\image{image29.png}{Mexican political elite network}{}
 
 
-\subsection{Subtask 1}
-Overall, the network has \textbf{35 vertices}, which represent Mexican presidents and close collaborators, and \textbf{117 edges} that indicate the presence of political, kinship, friendship, or business ties between the actors (Figure 6). Also, our network has zero arcs (due to its \textbf{undirected nature}), no loops. Given that all of the network’s lines are equal to 1, we can confirm that the network is \textbf{unweighted}. Since the observed network does not differentiate between the types of actor interaction, it is \textbf{unimodal} and \textbf{does not contain multiple lines}. The density of our network, which is basically the ratio of links to nodes, is quite low, reaching 0.196, which means that only 19.6 percent of all possible edges are present. This implies that the network is not as connected as it could be. The network’s \textbf{average degree} equals \textbf{6.69}, which suggests that on average, each node in the network has 6.69 links.
+\subsection{Subtask 1. Basic characteristics}
+Overall, the network has \textbf{35 vertices}, which represent Mexican presidents and close collaborators, and \textbf{117 edges} that indicate the presence of political, kinship, friendship, or business ties between the actors (Figure 6). Also, our network has zero arcs (due to its \textbf{undirected nature}), no loops. Given that all of the network’s lines are equal to 1, we can confirm that the network is \textbf{unweighted}. Since the observed network does not differentiate between the types of actor interaction, it is \textbf{unimodal} and \textbf{does not contain multiple lines}. The density of our network, which is basically the ratio of links to nodes, is quite low, reaching 0.196, which means that only 19.6 percent of all possible edges are present. This implies that the network is not as connected as it could be. The network’s \textbf{average degree} equals 6.69, which suggests that on average, each node in the network has 6.69 links.
 
 \image{image7.png}{General network information}{0.8}
 \image{image13.png}{The network is unweighted}{0.4}
@@ -45,7 +45,7 @@ As can be noticed from Figure 8, the network’s \textbf{lowest degree} equals 2
 
 \image{image1.png}{Degree}{0.8}
 
-The network’s \textbf{diameter} amounts to 4, which refers to the length of the longest shortest path — in our case, it is the path from Madero Francisco to José López Portillo (Figure 9).
+The network’s \textbf{diameter} amounts to 4, which refers to the length of the longest of all the shortest paths — in our case, it is the path from Madero Francisco to José López Portillo (Figure 9).
 
 \image{image30.png}{Degree}{}
 
@@ -62,7 +62,7 @@ Meanwhile, triads with two relations, or the ones in which all three dyads have 
 \clearpage
 
 
-\subsection{Subtask 2}
+\subsection{Subtask 2. Network statistics}
 As expected, the largest \textbf{(weak) component} is the whole graph. The result corresponds to the one we have established in the Subtask 1 because there is no distinction between weak and strong components in undirected graphs.
 
 \image{image11.png}{Triadic Census}{}
@@ -99,7 +99,7 @@ As can be seen, the most common degree value is 6 (7 actors), while the most uni
 \clearpage
 
 
-\subsection{Subtask 3}
+\subsection{Subtask 3. k-core}
 Now, let us determine the cores in our network (Figure 17).
 
 \image{image23.png}{All core partition}{}
@@ -116,7 +116,7 @@ The plot of the largest core is shown below.
 
 
 
-\subsection{Subtask 4}
+\subsection{Subtask 4. Island approach}
 Now we have to use an \textbf{island approach} to determine some link islands in the network.
 
 By definition, an \textbf{island} is a subnetwork of vertices connected directly or indirectly by lines with a value greater than the lines to vertices outside the subnetwork \cite{de_nooy_2018}. So, to successfully apply this approach we need to measure the values of links in the network. To do so, we may use the 3-rings method. 
@@ -174,7 +174,7 @@ This version of the island is \textbf{more coherent} than in the previous case, 
 \clearpage
 
 
-\subsection{Subtask 5}
+\subsection{Subtask 5. Line-cut}
 
 Now we need to make a \textbf{line-cut} of the network. Line-cut is another useful technique for \textbf{extracting parts of a network} where only lines (and their vertices) above a certain value are retained \cite{batagelj_doreian_ferligoj_kejzar_2014}. In other words, we select only those parts of the network where values of lines are above a certain threshold, and those parts are probably of more importance than others.
 
@@ -206,4 +206,13 @@ Additionally, if we remove isolated vertices from the line-cut network, we can l
 \clearpage
 
 
-\subsection{Subtask 6}
+\subsection{Subtask 6. Conclusion}
+
+Overall, we have established that the majority of Mexican political elite network’s actors are tightly interlinked with each other, maintaining close ties with at least 5 political figures. It should be noted that Miguel Alemán Valdés is the most influential political actor among the Mexican elites, whereas Cuauhtémoc Cárdenas is the least powerful in terms of his connections to former presidents and their closest collaborators. Miguel Alemán Valdés’ influence can be explained by the fact that throughout his political career, he occupied a fair share of prominent positions in the Mexican government, starting from legal adviser to the Secretary of Agriculture and Livestock and ending at being declared the President Avila Camacho’s successor and, subsequently, becoming the first non-military President. As a president, Miguel Alemán Valdés continued to collaborate with the political elites — his regime was marked by rampant political corruption and crony capitalism. As a member of the National Democratic Front, Cuauhtémoc Cárdenas, on the contrary, often stood in opposition to the government, campaigning against poverty, corruption and crime. This explains his lack of tight connections to the Mexican elites.
+
+Speaking of cohesive subgroups in our network, the link island approach and line-cut were used in this research. Both methods proved the network consists of two subnetworks, a smaller group of 5 actors and a larger one of 9 to 13 actors, depending on the method used and specified threshold. As could be noticed, the larger group mostly consists of civilian actors (with 1 to 3 exceptions), and actors in the smaller group are from both categories. 
+
+An interesting detail is the periods of political activity in the groups. The smaller group is formed by actors who were noticed between 1911 and 1928. On the contrary, the actors from the larger group have been active approximately since 1946, right after WWII. And, as mentioned before, they were mostly civilians.
+
+Another notice could be made about how network statistics correspond to the island approach. It was stated that Miguel Alemán Valdés has the highest all degree value, betweenness, closeness and Freeman’s degree centralities, which makes him the most significant node in the network. However, he is not the highest point of an island, actually, he is the second to top (Antonio Ortiz Mena). Such a fact could be explained by the technique of cutting out some edges, thus potentially removing the links that were counting towards Miguel Alemán Valdés. Nevertheless, the results of two parts of the research are more or less consistent. 
+
