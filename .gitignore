@@ -1,0 +1,9 @@
+*.aux
+*.bbl
+*.blg
+*.out
+*.run.xml
+FiraCode-Regular.otf
+*.log
+*.toc
+*.bcf
