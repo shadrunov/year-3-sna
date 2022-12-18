@@ -11,7 +11,7 @@ Next, we proceeded with visualisation of the network \cite{pajek_workshop}. Afte
 
 \image{image22.png}{Default layout}{}
 
-To restore the resemblance, we need to manually move vertices, as on the original network. The layout might be not very neat, however, it represents the \textbf{actual positions} of a football team in a stadium. This way we understand how the observed network describes the actual situation in a football game. 
+To restore the resemblance, we need to manually move vertices, as on the original network. The layout might be not very neat, however, it represents the \textbf{actual positions} of a football team on a stadium. This way we understand how the observed network describes the actual situation in a real football game. 
 
 The result is in the Figure 3.
 
@@ -37,15 +37,15 @@ In this task, we are to analyse the Mexican polite elite network, which is displ
 Overall, the network has \textbf{35 vertices}, which represent Mexican presidents and close collaborators, and \textbf{117 edges} that indicate the presence of political, kinship, friendship, or business ties between the actors (Figure 6). Also, our network has zero arcs (due to its \textbf{undirected nature}), no loops. Given that all of the network’s lines are equal to 1, we can confirm that the network is \textbf{unweighted}. Since the observed network does not differentiate between the types of actor interaction, it is \textbf{unimodal} and \textbf{does not contain multiple lines}. The density of our network, which is basically the ratio of links to nodes, is quite low, reaching 0.196, which means that only 19.6 percent of all possible edges are present. This implies that the network is not as connected as it could be. The network’s \textbf{average degree} equals \textbf{6.69}, which suggests that on average, each node in the network has 6.69 links.
 
 \image{image7.png}{General network information}{0.8}
-\image{image13.png}{the network is unweighted}{0.4}
+\image{image13.png}{The network is unweighted}{0.4}
 \FloatBarrier
 
 
-As can be noticed from Figure 8, the network’s \textbf{lowest degree} equals 2 (Cuauhtémoc Cárdenas), whereas the largest amounts — to 17 (Miguel Alemán Valdés). Thus, we can conclude that having direct contact with many other actors, Miguel Alemán Valdés is the \textbf{most influential node} in our network. The network’s plot with the vertex sizes and colours adjusted by their degree values can be viewed in the ....
+As can be noticed from Figure 8, the network’s \textbf{lowest degree} equals 2 (Cuauhtémoc Cárdenas), whereas the largest amounts to 17 (Miguel Alemán Valdés). Thus, we can conclude that having direct contact with many other actors, Miguel Alemán Valdés is the \textbf{most influential node} in our network. The network’s plot with the vertex sizes and colours adjusted by their degree values can be viewed in the Figure 16.
 
 \image{image1.png}{Degree}{0.8}
 
-The network’s \textbf{diameter} amounts to 4, which refers to the length of the longest shortest path —  in our case, it is the path from Madero Francisco to José López Portillo (Figure 9).
+The network’s \textbf{diameter} amounts to 4, which refers to the length of the longest shortest path — in our case, it is the path from Madero Francisco to José López Portillo (Figure 9).
 
 \image{image30.png}{Degree}{}
 
@@ -75,7 +75,7 @@ High \textbf{betweenness} indicates an actor who is on many paths between other 
 \image{image8.png}{Betweenness Centrality}{}
 % \FloatBarrier
 
-The \textbf{closeness centrality} of a node measures its average farness (inverse distance) to all other nodes. The highest value equals 0.6667, while the lowest amounts to 0.3864. Thus, as expected, the node with the shortest distances to all other nodes is Miguel Alemán Valdés, whereas Lázaro Cárdenas is a few points behind him  (Figure 14).
+The \textbf{closeness centrality} of a node measures its average farness (inverse distance) to all other nodes. The highest value equals 0.6667, while the lowest amounts to 0.3864. Thus, as expected, the node with the shortest distances to all other nodes is Miguel Alemán Valdés, whereas Lázaro Cárdenas is a few points behind him (Figure 14).
 
 \image{image20.png}{Closeness Centrality}{}
 % \FloatBarrier
@@ -88,7 +88,7 @@ The \textbf{closeness centrality} of a node measures its average farness (invers
 
 Let us plot the network, partitioned by the degree centrality measure (Figure 16).
 
-\image{image28.png}{All Degree Centrality}{}
+\image{image28.png}{The network partitioned by the degree}{}
 
 In this layout, the vertex with the highest degree value is at the top, whereas the least central ones are positioned below. The nodes are coloured according to their degree values as well.
 
@@ -104,9 +104,9 @@ Now, let us determine the cores in our network (Figure 17).
 
 \image{image23.png}{All core partition}{}
 
-\textbf{Coreness} is a measure that can help identify tightly interlinked groups within a network. A \textbf{k-core} is a maximal group of entities, all of which are connected to at least k other entities in the group.  In the k-core, each actor is connected to at least k other actors. The given network contains a large 5-core (25 vertices). In addition, there is a 2-core (2 vertices), a 3-core (5 vertices), and a 4-core (3 vertices).
+\textbf{Coreness} is a measure that can help identify tightly interlinked groups within a network. A \textbf{k-core} is a maximal group of entities, all of which are connected to at least $k$ other entities in the group. In the k-core, each actor is connected to at least $k$ other actors. The given network contains a large 5-core (25 vertices). In addition, there is a 2-core (2 vertices), a 3-core (5 vertices), and a 4-core (3 vertices). 
 
-Given that the 5-core is the  one, we can conclude that the actors in our network entertain close ties with a large group of people: 71.42 per cent of the members of the elites socialise with at least 5 other political actors.
+Given that the 5-core is the largest one, we can conclude that the actors in our network entertain wide-ranging social ties: 71.42 per cent of the members of the elites socialise with at least 5 other political actors. 
 
 The plot of the largest core is shown below.
 
@@ -121,7 +121,7 @@ Now we have to use an \textbf{island approach} to determine some link islands in
 
 By definition, an \textbf{island} is a subnetwork of vertices connected directly or indirectly by lines with a value greater than the lines to vertices outside the subnetwork \cite{de_nooy_2018}. So, to successfully apply this approach we need to measure the values of links in the network. To do so, we may use the 3-rings method. 
 
-\textbf{3-rings} method means that the ring counts are stored as line values — how many times each line belongs to 3-rings. In Pajek, we select \texttt{Create New Network > with Ring Counts stored as Line Values > 3-Rings > Undirected}. The result is on the figure below.
+\textbf{3-rings} method means that the ring counts are stored as line values — how many times each line belongs to 3-rings. In Pajek, we select \texttt{Create New Network > with Ring Counts stored as Line Values > 3-Rings > Undirected}. The result is in the figure below.
 
 \image{image6.png}{Weighted network}{}
 
@@ -158,7 +158,7 @@ The island of size 2 is not particularly informative.
 
 
 \subsubsection{Maximum Size 10}
-Let’s reduce the maximum size of an island to 10. Create new islands with \texttt{Network > Create Partition > Islands > Line Weights, Maximum Size — 10, Minimum Size — 2}. Also we remove isolated vertices (\texttt{Network > Create Partition > Degree > All, Operations > Network + Partition > Extract > SubNetwork Induced by Union of Selected Clusters}). The result is on the figure below.
+Let’s reduce the maximum size of an island to 10. Create new islands with \texttt{Network > Create Partition > Islands > Line Weights, Maximum Size — 10, Minimum Size — 2}. Also we remove isolated vertices (\texttt{Network > Create Partition > Degree > All, Operations > Network + Partition > Extract > SubNetwork Induced by Union of Selected Clusters}). The result is in the figure below.
 
 \image{image12.png}{Generated Islands}{}
 \FloatBarrier
@@ -168,7 +168,7 @@ Again, we should apply attributes to the islands (Figure 26).
 \image{image24.png}{Islands with attributes}{}
 \FloatBarrier
 
-As might be seen, two small islands did not change, and the biggest island now contains only \textbf{9 vertices}. They are \textbf{mostly civilians}, except one (with the most height).
+As might be seen, two small islands did not change, and the biggest island now contains only \textbf{9 vertices}. They are \textbf{mostly civilians}, except the highest one, who is a military person.
 
 This version of the island is \textbf{more coherent} than in the previous case, and here we may see that all actors have been active \textbf{since 1946} (after World War II). Furthermore, this island might have been “started” with the military person \textit{Aleman Valdes} (1946), as he is in the middle of the island, and all other actors who performed later are directly or indirectly connected to him.
 \clearpage
